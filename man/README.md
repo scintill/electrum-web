@@ -2,6 +2,10 @@
 
 Created with [md2man](https://rubygems.org/gems/md2man).
 
+```
+md2man-roff electrum.md > electrum.1
+```
+
 ## Sections
 
 * Name

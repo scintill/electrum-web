@@ -1,10 +1,12 @@
 .TH ELECTRUM 1.9.7 "JANUARY 2014" Linux "User Manuals"
 .SH NAME
 .PP
-Electrum \- Bitcoin thin client
+electrum \- Bitcoin thin client ("wallet")
 .SH SYNOPSIS
 .PP
 \fB\fCelectrum\fR [\fB\fC-w\fR \fIwallet\fP ] [\fB\fC-p\fR \fIproxy\fP ] [\fB\fC-s\fR \fIserver\fP ] [\fB\fC-g\fR \fIgui\fP ] [\fB\fC-o\fR] [\fB\fC-C\fR]
+.br
+\fB\fCelectrum -v\fR
 .SH DESCRIPTION
 .PP
 \fB\fCElectrum\fR is an easy to use Bitcoin wallet. It protects you from
@@ -14,31 +16,31 @@ or learn by heart. There's no waiting time when you start Electrum,
 because it doesn't download the Bitcoin blockchain.
 .SH OPTIONS
 .TP
-\fB\fC-w\fR \fI/path/to/wallet.dat\fP
-Load the wallet file \fI/path/to/wallet.dat\fP instead of the default,
+\fB\fC-w\fR \fIpath/to/wallet.dat\fP, \fB\fC--wallet\fR=\fIWALLET_PATH\fP
+Load the wallet file \fIpath/to/wallet.dat\fP instead of the default,
 \fI~/.electrum/wallets/default_wallet\fP\&.
 .TP
-\fB\fC-p\fR \fI[type:]host[:port]\fP
-Use the proxy [type:]host[:port] to connect to an Electrum server,
+\fB\fC-p\fR \fItype:host:port\fP, \fB\fC--port\fR=\fIPORT\fP
+Use the proxy type:host:port to connect to an Electrum server,
 where type is either \fB\fCsocks4\fR, \fB\fCsocks5\fR or \fB\fChttp\fR\&.
 .TP
-\fB\fC-s\fR \fIhost:port:protocol\fP
+\fB\fC-s\fR \fIhost:port:protocol\fP, \fB\fC--server\fR=\fISERVER\fP
 Connect to the Electrum server at \fB\fChost:port\fR, where protocol is either
-\fB\fCt\fR or \fB\fCh\fR\&. Port should be 8081 for HTTP, 8082 for HTTPS, 50001 for TCP,
-or 50002 for SSL.
+\fB\fCt\fR (tcp), \fB\fCh\fR (http), \fB\fCs\fR (tcp+ssl), or \fB\fCg\fR (https). Port should be
+8081 for HTTP, 8082 for HTTPS, 50001 for TCP, or 50002 for SSL.
 .TP
-\fB\fC-g\fR \fI[gui]\fP
-Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCstdio\fR
-or \fB\fCtext\fR\&. The default GUI is qt.
+\fB\fC-g\fR \fI[gui]\fP, \fB\fC--gui\fR=\fIGUI\fP
+Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCtext\fR
+or \fB\fCstdio\fR\&. The default GUI is \fB\fCqt\fR\&.
 .TP
-\fB\fC-o\fR
+\fB\fC-o\fR, \fB\fC--offline\fR
 Operate in offline mode, useful when no Internet connection is present.
 .TP
-\fB\fC-C\fR
+\fB\fC-C\fR, \fB\fC--concealed\fR
 Don't echo seed to console, useful when running on potentially
 untrusted hosts.
 .TP
-\fB\fC-v\fR
+\fB\fC-v\fR, \fB\fC--verbose\fR
 Verbose mode. Shows debugging information.
 .SH FILES
 .TP
