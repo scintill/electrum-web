@@ -9,7 +9,7 @@ electrum - Bitcoin thin client ("wallet")
 SYNOPSIS
 --------
 
-`electrum` [`-w` *wallet* ] [`-p` *proxy* ] [`-s` *server* ] [`-g` *gui* ] [`-o`] [`-C`]  
+`electrum` [`-w` *wallet* ] [`-p` *proxy* ] [`-s` *server* ] [`-g` *gui* ] [`-1`] [`-o`] [`-C`]  
 `electrum -v`
 
 DESCRIPTION
@@ -40,6 +40,10 @@ OPTIONS
 `-g` *[gui]*, `--gui`=*GUI*
   Use the selected GUI, where gui is either `qt`, `lite`, `gtk`, `text`
   or `stdio`. The default GUI is `qt`.
+
+`-1`, `--oneserver`
+  Connect to one server only, useful when running a private instance
+  of electrum-server.
 
 `-o`, `--offline`
   Operate in offline mode, useful when no Internet connection is present.
@@ -85,9 +89,12 @@ its purpose.
 AUTHOR
 ------
 
-Andy Weidenbaum <archbaum@gmail.com>
+This manual page was written by Andy Weidenbaum
+<archbaum@gmail.com>. Permission is granted to copy, distribute and/or
+modify this document under the terms of the GNU General Public License,
+Version 3 or any later version published by the Free Software Foundation.
 
 SEE ALSO
 --------
 
-bar(1), foo(5), xyzzy(1), [Linux Man Page Howto](http://www.schweikhardt.net/man_page_howto.html)
+electrum-server(1), bitcoind(1)

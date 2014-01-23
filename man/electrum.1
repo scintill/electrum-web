@@ -4,7 +4,7 @@
 electrum \- Bitcoin thin client ("wallet")
 .SH SYNOPSIS
 .PP
-\fB\fCelectrum\fR [\fB\fC-w\fR \fIwallet\fP ] [\fB\fC-p\fR \fIproxy\fP ] [\fB\fC-s\fR \fIserver\fP ] [\fB\fC-g\fR \fIgui\fP ] [\fB\fC-o\fR] [\fB\fC-C\fR]
+\fB\fCelectrum\fR [\fB\fC-w\fR \fIwallet\fP ] [\fB\fC-p\fR \fIproxy\fP ] [\fB\fC-s\fR \fIserver\fP ] [\fB\fC-g\fR \fIgui\fP ] [\fB\fC-1\fR] [\fB\fC-o\fR] [\fB\fC-C\fR]
 .br
 \fB\fCelectrum -v\fR
 .SH DESCRIPTION
@@ -32,6 +32,10 @@ Connect to the Electrum server at \fB\fChost:port\fR, where protocol is either
 \fB\fC-g\fR \fI[gui]\fP, \fB\fC--gui\fR=\fIGUI\fP
 Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCtext\fR
 or \fB\fCstdio\fR\&. The default GUI is \fB\fCqt\fR\&.
+.TP
+\fB\fC-1\fR, \fB\fC--oneserver\fR
+Connect to one server only, useful when running a private instance
+of electrum\-server.
 .TP
 \fB\fC-o\fR, \fB\fC--offline\fR
 Operate in offline mode, useful when no Internet connection is present.
@@ -69,14 +73,12 @@ The command name should have been chosen more carefully to reflect
 its purpose.
 .SH AUTHOR
 .PP
-Andy Weidenbaum 
+This manual page was written by Andy Weidenbaum
 .MT archbaum@gmail.com
-.ME
+.ME \&. Permission is granted to copy, distribute and/or
+modify this document under the terms of the GNU General Public License,
+Version 3 or any later version published by the Free Software Foundation.
 .SH SEE ALSO
 .PP
-.BR bar (1), 
-.BR foo (5), 
-.BR xyzzy (1), 
-Linux Man Page Howto
-.UR http://www.schweikhardt.net/man_page_howto.html
-.UE
+.BR electrum-server (1), 
+.BR bitcoind (1)
