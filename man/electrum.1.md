@@ -9,7 +9,8 @@ electrum - Bitcoin thin client ("wallet")
 SYNOPSIS
 --------
 
-`electrum` [`-w` *wallet* ] [`-p` *proxy* ] [`-s` *server* ] [`-g` *gui* ] [`-1`] [`-o`] [`-C`]  
+`electrum` [*options*] *command* [*args*] [*options*]  
+`electrum` [`-w` *wallet* ] [`-p` *proxy* ] [`-s` *server* ] [`-g` *gui* ] *command* [`-1`] [`-o`] [`-C`]  
 `electrum -v`
 
 DESCRIPTION
@@ -24,8 +25,8 @@ because it doesn't download the Bitcoin blockchain.
 OPTIONS
 -------
 
-`-w` *path/to/wallet.dat*, `--wallet`=*WALLET_PATH*
-  Load the wallet file *path/to/wallet.dat* instead of the default,
+`-w` *path/to/wallet*, `--wallet`=*WALLET_PATH*
+  Load the wallet file *path/to/wallet* instead of the default,
   *~/.electrum/wallets/default_wallet*.
 
 `-p` *type:host:port*, `--port`=*PORT*
@@ -52,8 +53,200 @@ OPTIONS
   Don't echo seed to console, useful when running on potentially
   untrusted hosts.
 
+`-h`, `--help`
+  Display help and exit.
+
 `-v`, `--verbose`
   Verbose mode. Shows debugging information.
+
+COMMANDS
+--------
+
+`contacts`
+  Show your list of contacts.
+
+`create`
+  Create a new wallet.
+
+`createmultisig`
+  TBD
+
+`createrawtransaction`
+  TBD
+
+`decoderawtransaction`
+  TBD
+
+`deseed`
+  Remove seed from wallet, creating a seedless, watching-only wallet.
+
+`dumpprivkey`
+  Dump private key for specified address.
+    Syntax: electrum dumpprivkey {address}
+
+`dumpprivkeys`
+  Dump all private keys.
+
+`freeze`
+  Freeze the funds at one of your wallet's addresses.
+    Syntax: electrum freeze {address}
+
+`getaddressbalance`
+  Return the balance of an address.
+    Syntax: electrum getaddressbalance {address}
+
+`getaddresshistory`
+  Return the transaction history of a wallet address.
+    Syntax: electrum getaddresshistory {address}
+
+`getbalance`
+  Return the balance of your wallet, or of one account in your wallet.
+    Syntax: electrum getbalance {account}
+
+`getconfig`
+  Return a configuration variable.
+    Syntax: electrum getconfig {name}
+
+`getmpk`
+  Return your wallet's master public key.
+    Syntax: electrum getmpk
+
+`getpubkeys`
+  Return the pubkeys for a wallet address.
+    Syntax: electrum getpubkeys {address}
+
+`getrawtransaction`
+  Retrieve a transaction.
+    Syntax: electrum getrawtransaction {txhash} {height}
+
+`getseed`
+  Print the generation seed of your wallet.
+    Syntax: electrum getseed
+
+`getservers`
+  Return the list of available servers.
+    Syntax: electrum getservers
+
+`getversion`
+  Return the version of your client.
+    Syntax: electrum getversion
+
+`help`
+  Print help.
+    Syntax: electrum gethelp
+
+`history`
+  Return the transaction history of your wallet.
+    Syntax: electrum history
+
+`importprivkey`
+  Import a private key into your wallet.
+    Syntax: electrum importprivkey {privatekey}
+
+`listaddresses`
+  Return a list of addresses in your wallet.
+    Syntax:
+      electrum listaddresses
+    Options:
+      -a
+        show all addresses, including change addresses
+      -l
+        include labels in results
+
+`listunspent`
+  Return the list of unspent inputs in your wallet.
+    Syntax: electrum listunspent
+
+`mksendmanytx`
+  Create and broadcast a signed transaction to one or more recipients.
+    Syntax:
+      electrum mksendmanytx {recipient} {amount} [{recipient} {amount} ...]
+    Options:
+      --fee, -f
+        set transaction fee
+      --fromaddr, -F
+        send from address {address}
+      --changeaddr, -c
+        send change to address
+
+`mktx`
+  Create a signed transaction.
+    Syntax:
+      electrum mktx {recipient} {amount} [label]
+    Options:
+      --fee, -f
+        set transaction fee
+      --fromaddr, -F
+        send from address {address}
+      --changeaddr, -c
+        send change to address
+
+`password`
+  Change your wallet password.
+    Syntax: electrum password
+
+`payto`
+  Create and broadcast a transaction.
+    Syntax: payto {recipient} {amount}
+      {recipient} can be a bitcoin address or a label
+    Options:
+      --fee, -f
+        set transaction fee
+      --fromaddr, -F
+        send from address {address}
+      --changeaddr, -c
+        send change to address
+
+`paytomany`
+  Create and broadcast a transaction to one or more recipients.
+    Syntax: payto {recipient} {amount} [{recipient} {amount} ...]
+      {recipient} can be a bitcoin address or a label
+    Options:
+      --fee, -f
+        set transaction fee
+      --fromaddr, -F
+        send from address {address}
+      --changeaddr, -c
+        send change to address
+
+`restore`
+  Restore a wallet. Accepts a seed or master public key.
+    Syntax: electrum restore
+
+`sendrawtransaction`
+  Broadcast a signed transaction to the network.
+    Syntax: electrum sendrawtransaction {tx in hexadecimal}
+
+`setconfig`
+  Set a configuration variable.
+    Syntax: electrum setconfig {name} {value}
+
+`setlabel`
+  Assign a label to an item.
+    Syntax: electrum setlabel {tx_hash} {label}
+
+`signmessage`
+  Sign a message with a key. If you want to lead or end a message with
+  spaces, or want double spaces inside the message, make sure you surround
+  the string in quotes.
+    Syntax: electrum signmessage {address} {message}
+
+`signrawtransaction`
+  TBD
+
+`unfreeze`
+  Unfreeze the funds at one of your wallet's addresses.
+    Syntax: electrum unfreeze {address}
+
+`validateaddress`
+  Check that the address is valid.
+    Syntax: electrum validateaddress {address}
+
+`verifymessage`
+  Verifies a signature. If you want to lead or end a message with spaces,
+  or want double spaces inside the message, make sure you surround the
+  string in quotes.
+    Syntax: electrum verifymessage {address} {signature} {message}
 
 FILES
 -----
@@ -83,8 +276,7 @@ The following diagnostics may be issued on stderr:
 BUGS
 ----
 
-The command name should have been chosen more carefully to reflect
-its purpose.
+Report issues at https://github.com/spesmilo/electrum/issues.
 
 AUTHOR
 ------
