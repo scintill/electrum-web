@@ -43,7 +43,7 @@ OPTIONS
   or `stdio`. The default GUI is `qt`.
 
 `-1`, `--oneserver`
-  Connect to one server only, useful when running a private instance
+  Connect to one server only, useful when connecting to a private instance
   of electrum-server.
 
 `-o`, `--offline`
