@@ -53,226 +53,200 @@ Display help and exit.
 Verbose mode. Shows debugging information.
 .SH COMMANDS
 .PP
-\fB\fCcontacts\fR
-  Show your list of contacts.
-    Syntax:
-      electrum contacts
+\fB\fCcontacts\fR: Show your list of contacts.
+.IP
+electrum contacts
 .PP
-\fB\fCcreate\fR
-  Create a new wallet.
-    Syntax:
-      electrum create
-.TP
+\fB\fCcreate\fR: Create a new wallet.
+.IP
+electrum create
+.PP
 \fB\fCcreatemultisig\fR
+.IP
 TBD
-.TP
+.PP
 \fB\fCcreaterawtransaction\fR
+.IP
 TBD
-.TP
+.PP
 \fB\fCdecoderawtransaction\fR
+.IP
 TBD
 .PP
-\fB\fCdeseed\fR
-  Remove seed from wallet, creating a seedless, watching\-only wallet.
-    Syntax:
-      electrum deseed
+\fB\fCdeseed\fR: Remove seed from wallet, creating a seedless, watching\-only wallet.
+.IP
+electrum deseed
 .PP
-\fB\fCdumpprivkey\fR
-  Dump private key for specified address.
-    Syntax:
-      electrum dumpprivkey \fIADDRESS\fP
+\fB\fCdumpprivkey\fR: Dump private key for specified address.
+.IP
+electrum dumpprivkey \fIADDRESS\fP
 .PP
-\fB\fCdumpprivkeys\fR
-  Dump all private keys.
-    Syntax:
-      electrum dumpprivkeys
+\fB\fCdumpprivkeys\fR: Dump all private keys.
+.IP
+electrum dumpprivkeys
 .PP
-\fB\fCfreeze\fR
-  Freeze the funds at one of your wallet's addresses.
-    Syntax:
-      electrum freeze \fIADDRESS\fP
+\fB\fCfreeze\fR: Freeze the funds at one of your wallet's addresses.
+.IP
+electrum freeze \fIADDRESS\fP
 .PP
-\fB\fCgetaddressbalance\fR
-  Return the balance of an address.
-    Syntax:
-      electrum getaddressbalance \fIADDRESS\fP
+\fB\fCgetaddressbalance\fR: Return the balance of an address.
+.IP
+electrum getaddressbalance \fIADDRESS\fP
 .PP
-\fB\fCgetaddresshistory\fR
-  Return the transaction history of a wallet address.
-    Syntax:
-      electrum getaddresshistory \fIADDRESS\fP
+\fB\fCgetaddresshistory\fR: Return the transaction history of a wallet address.
+.IP
+electrum getaddresshistory \fIADDRESS\fP
 .PP
-\fB\fCgetbalance\fR
-  Return the balance of your wallet, or of one account in your wallet.
-    Syntax:
-      electrum getbalance \fIACCOUNT\fP
+\fB\fCgetbalance\fR: Return the balance of your wallet, or of one account in your wallet.
+.IP
+electrum getbalance \fIACCOUNT\fP
 .PP
-\fB\fCgetconfig\fR
-  Return a configuration variable.
-    Syntax:
-      electrum getconfig \fINAME\fP
+\fB\fCgetconfig\fR: Return a configuration variable.
+.IP
+electrum getconfig \fINAME\fP
 .PP
-\fB\fCgetmpk\fR
-  Return your wallet's master public key.
-    Syntax:
-      electrum getmpk
+\fB\fCgetmpk\fR: Return your wallet's master public key.
+.IP
+electrum getmpk
 .PP
-\fB\fCgetpubkeys\fR
-  Return the pubkeys for a wallet address.
-    Syntax:
-      electrum getpubkeys \fIADDRESS\fP
+\fB\fCgetpubkeys\fR: Return the pubkeys for a wallet address.
+.IP
+electrum getpubkeys \fIADDRESS\fP
 .PP
-\fB\fCgetrawtransaction\fR
-  Retrieve a transaction.
-    Syntax:
-      electrum getrawtransaction \fITX_HASH\fP \fIHEIGHT\fP
+\fB\fCgetrawtransaction\fR: Retrieve a transaction.
+.IP
+electrum getrawtransaction \fITX_HASH\fP \fIHEIGHT\fP
 .PP
-\fB\fCgetseed\fR
-  Print the generation seed of your wallet.
-    Syntax:
-      electrum getseed
+\fB\fCgetseed\fR: Print the generation seed of your wallet.
+.IP
+electrum getseed
 .PP
-\fB\fCgetservers\fR
-  Return the list of available servers.
-    Syntax:
-      electrum getservers
+\fB\fCgetservers\fR: Return the list of available servers.
+.IP
+electrum getservers
 .PP
-\fB\fCgetversion\fR
-  Return the version of your client.
-    Syntax:
-      electrum getversion
+\fB\fCgetversion\fR: Return the version of your Electrum client.
+.IP
+electrum getversion
 .PP
-\fB\fChelp\fR
-  Print help message.
-    Syntax:
-      electrum help
+\fB\fChelp\fR: Print help message.
+.IP
+electrum help
 .PP
-\fB\fChistory\fR
-  Return the transaction history of your wallet.
-    Syntax:
-      electrum history
+\fB\fChistory\fR: Return the transaction history of your wallet.
+.IP
+electrum history
 .PP
-\fB\fCimportprivkey\fR
-  Import a private key into your wallet.
-    Syntax:
-      electrum importprivkey \fIPRIVATE_KEY\fP
+\fB\fCimportprivkey\fR: Import a private key into your wallet.
+.IP
+electrum importprivkey \fIPRIVATE_KEY\fP
 .PP
-\fB\fClistaddresses\fR
-  Return a list of addresses in your wallet.
-    Syntax:
-      electrum listaddresses
+\fB\fClistaddresses\fR: Return a list of addresses in your wallet.
+.TP
+electrum listaddresses
     Options:
       \fB\fC-a\fR
         show all addresses, including change addresses
       \fB\fC-l\fR
         include labels in results
 .PP
-\fB\fClistunspent\fR
-  Return the list of unspent inputs in your wallet.
-    Syntax:
-      electrum listunspent
+\fB\fClistunspent\fR: Return the list of unspent inputs in your wallet.
+.IP
+electrum listunspent
 .PP
-\fB\fCmksendmanytx\fR
-  Create and broadcast a signed transaction to one or more recipients.
-    Syntax:
-      electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
-.PP
-\fB\fCmktx\fR
-  Create a signed transaction.
-    Syntax:
-      electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP]
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
-.PP
-\fB\fCpassword\fR
-  Change your wallet password.
-    Syntax:
-      electrum password
-.PP
-\fB\fCpayto\fR
-  Create and broadcast a signed transaction.
-    Syntax:
-      electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP
-        \fIRECIPIENT\fP can be a bitcoin address or a label
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
-.PP
-\fB\fCpaytomany\fR
-  Create and broadcast a signed transaction to one or more recipients.
-    Syntax:
-      electrum paytomany \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
-        \fIRECIPIENT\fP can be a bitcoin address or an address label
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
-.PP
-\fB\fCrestore\fR
-  Restore a wallet. Accepts a seed or master public key.
-    Syntax:
-      electrum restore
-.PP
-\fB\fCsendrawtransaction\fR
-  Broadcast a signed transaction to the network.
-    Syntax:
-      electrum sendrawtransaction \fITX\fIIN\fPHEXADECIMAL\fP
-.PP
-\fB\fCsetconfig\fR
-  Set a configuration variable.
-    Syntax:
-      electrum setconfig \fINAME\fP \fIVALUE\fP
-.PP
-\fB\fCsetlabel\fR
-  Assign a label to an item.
-    Syntax:
-      electrum setlabel \fITX_HASH\fP \fILABEL\fP
-.PP
-\fB\fCsignmessage\fR
-  Sign a message with a key. If you want to lead or end a message with
-  spaces, or want double spaces inside the message, make sure you surround
-  the string in quotes.
-    Syntax:
-      electrum signmessage \fIADDRESS\fP \fIMESSAGE\fP
+\fB\fCmksendmanytx\fR: Create and broadcast a signed transaction to one or
+                more recipients.
 .TP
-\fB\fCsignrawtransaction\fR
-TBD
+electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
+    Options:
+      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
+        set transaction fee of \fIFEE\fP
+      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
+        send from bitcoin address \fIADDRESS\fP
+      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
+        send change to bitcoin address \fIADDRESS\fP
 .PP
-\fB\fCunfreeze\fR
-  Unfreeze the funds at one of your wallet's addresses.
-    Syntax:
-      electrum unfreeze \fIADDRESS\fP
+\fB\fCmktx\fR: Create a signed transaction.
+.TP
+electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP]
+    Options:
+      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
+        set transaction fee of \fIFEE\fP
+      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
+        send from bitcoin address \fIADDRESS\fP
+      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
+        send change to bitcoin address \fIADDRESS\fP
 .PP
-\fB\fCvalidateaddress\fR
-  Check that the address is valid.
-    Syntax:
-      electrum validateaddress \fIADDRESS\fP
+\fB\fCpassword\fR: Change your wallet password.
+.IP
+electrum password
 .PP
-\fB\fCverifymessage\fR
-  Verifies a signature. If you want to lead or end a message with spaces,
-  or want double spaces inside the message, make sure you surround the
-  string in quotes.
-    Syntax:
-      electrum verifymessage \fIADDRESS\fP \fISIGNATURE\fP \fIMESSAGE\fP
+\fB\fCpayto\fR: Create and broadcast a signed transaction.
+.TP
+electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP
+    \fIRECIPIENT\fP can be a bitcoin address or an address label.
+.br
+    Options:
+      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
+        set transaction fee of \fIFEE\fP
+      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
+        send from bitcoin address \fIADDRESS\fP
+      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
+        send change to bitcoin address \fIADDRESS\fP
+.PP
+\fB\fCpaytomany\fR: Create and broadcast a signed transaction to one or more
+             recipients.
+.TP
+electrum paytomany \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
+    \fIRECIPIENT\fP can be a bitcoin address or an address label.
+.br
+    Options:
+      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
+        set transaction fee of \fIFEE\fP
+      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
+        send from bitcoin address \fIADDRESS\fP
+      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
+        send change to bitcoin address \fIADDRESS\fP
+.PP
+\fB\fCrestore\fR: Restore a wallet. Accepts a seed or master public key.
+.IP
+electrum restore
+.PP
+\fB\fCsendrawtransaction\fR: Broadcast a signed transaction to the network.
+.IP
+electrum sendrawtransaction \fITX\fIIN\fPHEXADECIMAL\fP
+.PP
+\fB\fCsetconfig\fR: Set a configuration variable.
+.IP
+electrum setconfig \fINAME\fP \fIVALUE\fP
+.PP
+\fB\fCsetlabel\fR: Assign a label to an item.
+.IP
+electrum setlabel \fITX_HASH\fP \fILABEL\fP
+.PP
+\fB\fCsignmessage\fR: Sign a message with a key. If you want to lead or end
+               a message with spaces, or want double spaces inside the
+               message, make sure you surround the string in quotes.
+.IP
+electrum signmessage \fIADDRESS\fP \fIMESSAGE\fP
+.PP
+\fB\fCsignrawtransaction\fR: Sign a raw transaction.
+.IP
+electrum signrawtransaction ...
+.PP
+\fB\fCunfreeze\fR: Unfreeze the funds at one of your wallet's addresses.
+.IP
+electrum unfreeze \fIADDRESS\fP
+.PP
+\fB\fCvalidateaddress\fR: Check that the address is valid.
+.IP
+electrum validateaddress \fIADDRESS\fP
+.PP
+\fB\fCverifymessage\fR: Verifies a signature. If you want to lead or end a
+                 message with spaces, or want double spaces inside the
+                 message, make sure you surround the string in quotes.
+.IP
+electrum verifymessage \fIADDRESS\fP \fISIGNATURE\fP \fIMESSAGE\fP
 .SH FILES
 .TP
 \fI~/.electrum/config\fP

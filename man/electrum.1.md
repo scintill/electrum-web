@@ -62,129 +62,111 @@ OPTIONS
 COMMANDS
 --------
 
-`contacts`
-  Show your list of contacts.
-    Syntax:
-      electrum contacts
+`contacts`: Show your list of contacts.
 
-`create`
-  Create a new wallet.
-    Syntax:
-      electrum create
+  electrum contacts
+
+`create`: Create a new wallet.
+
+  electrum create
 
 `createmultisig`
+
   TBD
 
 `createrawtransaction`
+
   TBD
 
 `decoderawtransaction`
+
   TBD
 
-`deseed`
-  Remove seed from wallet, creating a seedless, watching-only wallet.
-    Syntax:
-      electrum deseed
+`deseed`: Remove seed from wallet, creating a seedless, watching-only wallet.
 
-`dumpprivkey`
-  Dump private key for specified address.
-    Syntax:
-      electrum dumpprivkey *ADDRESS*
+  electrum deseed
 
-`dumpprivkeys`
-  Dump all private keys.
-    Syntax:
-      electrum dumpprivkeys
+`dumpprivkey`: Dump private key for specified address.
 
-`freeze`
-  Freeze the funds at one of your wallet's addresses.
-    Syntax:
-      electrum freeze *ADDRESS*
+  electrum dumpprivkey *ADDRESS*
 
-`getaddressbalance`
-  Return the balance of an address.
-    Syntax:
-      electrum getaddressbalance *ADDRESS*
+`dumpprivkeys`: Dump all private keys.
 
-`getaddresshistory`
-  Return the transaction history of a wallet address.
-    Syntax:
-      electrum getaddresshistory *ADDRESS*
+  electrum dumpprivkeys
 
-`getbalance`
-  Return the balance of your wallet, or of one account in your wallet.
-    Syntax:
-      electrum getbalance *ACCOUNT*
+`freeze`: Freeze the funds at one of your wallet's addresses.
 
-`getconfig`
-  Return a configuration variable.
-    Syntax:
-      electrum getconfig *NAME*
+  electrum freeze *ADDRESS*
 
-`getmpk`
-  Return your wallet's master public key.
-    Syntax:
-      electrum getmpk
+`getaddressbalance`: Return the balance of an address.
 
-`getpubkeys`
-  Return the pubkeys for a wallet address.
-    Syntax:
-      electrum getpubkeys *ADDRESS*
+  electrum getaddressbalance *ADDRESS*
 
-`getrawtransaction`
-  Retrieve a transaction.
-    Syntax:
-      electrum getrawtransaction *TX_HASH* *HEIGHT*
+`getaddresshistory`: Return the transaction history of a wallet address.
 
-`getseed`
-  Print the generation seed of your wallet.
-    Syntax:
-      electrum getseed
+  electrum getaddresshistory *ADDRESS*
 
-`getservers`
-  Return the list of available servers.
-    Syntax:
-      electrum getservers
+`getbalance`: Return the balance of your wallet, or of one account in your wallet.
 
-`getversion`
-  Return the version of your client.
-    Syntax:
-      electrum getversion
+  electrum getbalance *ACCOUNT*
 
-`help`
-  Print help message.
-    Syntax:
-      electrum help
+`getconfig`: Return a configuration variable.
 
-`history`
-  Return the transaction history of your wallet.
-    Syntax:
-      electrum history
+  electrum getconfig *NAME*
 
-`importprivkey`
-  Import a private key into your wallet.
-    Syntax:
-      electrum importprivkey *PRIVATE_KEY*
+`getmpk`: Return your wallet's master public key.
 
-`listaddresses`
-  Return a list of addresses in your wallet.
-    Syntax:
-      electrum listaddresses
+  electrum getmpk
+
+`getpubkeys`: Return the pubkeys for a wallet address.
+
+  electrum getpubkeys *ADDRESS*
+
+`getrawtransaction`: Retrieve a transaction.
+
+  electrum getrawtransaction *TX_HASH* *HEIGHT*
+
+`getseed`: Print the generation seed of your wallet.
+
+  electrum getseed
+
+`getservers`: Return the list of available servers.
+
+  electrum getservers
+
+`getversion`: Return the version of your Electrum client.
+
+  electrum getversion
+
+`help`: Print help message.
+
+  electrum help
+
+`history`: Return the transaction history of your wallet.
+
+  electrum history
+
+`importprivkey`: Import a private key into your wallet.
+
+  electrum importprivkey *PRIVATE_KEY*
+
+`listaddresses`: Return a list of addresses in your wallet.
+
+  electrum listaddresses
     Options:
       `-a`
         show all addresses, including change addresses
       `-l`
         include labels in results
 
-`listunspent`
-  Return the list of unspent inputs in your wallet.
-    Syntax:
-      electrum listunspent
+`listunspent`: Return the list of unspent inputs in your wallet.
 
-`mksendmanytx`
-  Create and broadcast a signed transaction to one or more recipients.
-    Syntax:
-      electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
+  electrum listunspent
+
+`mksendmanytx`: Create and broadcast a signed transaction to one or
+                more recipients.
+
+  electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
     Options:
       `--fee`, `-f` *FEE*
         set transaction fee of *FEE*
@@ -193,10 +175,9 @@ COMMANDS
       `--changeaddr`, `-c` *ADDRESS*
         send change to bitcoin address *ADDRESS*
 
-`mktx`
-  Create a signed transaction.
-    Syntax:
-      electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*]
+`mktx`: Create a signed transaction.
+
+  electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*]
     Options:
       `--fee`, `-f` *FEE*
         set transaction fee of *FEE*
@@ -205,16 +186,14 @@ COMMANDS
       `--changeaddr`, `-c` *ADDRESS*
         send change to bitcoin address *ADDRESS*
 
-`password`
-  Change your wallet password.
-    Syntax:
-      electrum password
+`password`: Change your wallet password.
 
-`payto`
-  Create and broadcast a signed transaction.
-    Syntax:
-      electrum payto *RECIPIENT* *AMOUNT*
-        *RECIPIENT* can be a bitcoin address or a label
+  electrum password
+
+`payto`: Create and broadcast a signed transaction.
+
+  electrum payto *RECIPIENT* *AMOUNT*
+    *RECIPIENT* can be a bitcoin address or an address label.  
     Options:
       `--fee`, `-f` *FEE*
         set transaction fee of *FEE*
@@ -223,11 +202,11 @@ COMMANDS
       `--changeaddr`, `-c` *ADDRESS*
         send change to bitcoin address *ADDRESS*
 
-`paytomany`
-  Create and broadcast a signed transaction to one or more recipients.
-    Syntax:
-      electrum paytomany *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
-        *RECIPIENT* can be a bitcoin address or an address label
+`paytomany`: Create and broadcast a signed transaction to one or more
+             recipients.
+
+  electrum paytomany *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
+    *RECIPIENT* can be a bitcoin address or an address label.  
     Options:
       `--fee`, `-f` *FEE*
         set transaction fee of *FEE*
@@ -236,52 +215,45 @@ COMMANDS
       `--changeaddr`, `-c` *ADDRESS*
         send change to bitcoin address *ADDRESS*
 
-`restore`
-  Restore a wallet. Accepts a seed or master public key.
-    Syntax:
-      electrum restore
+`restore`: Restore a wallet. Accepts a seed or master public key.
 
-`sendrawtransaction`
-  Broadcast a signed transaction to the network.
-    Syntax:
-      electrum sendrawtransaction *TX_IN_HEXADECIMAL*
+  electrum restore
 
-`setconfig`
-  Set a configuration variable.
-    Syntax:
-      electrum setconfig *NAME* *VALUE*
+`sendrawtransaction`: Broadcast a signed transaction to the network.
 
-`setlabel`
-  Assign a label to an item.
-    Syntax:
-      electrum setlabel *TX_HASH* *LABEL*
+  electrum sendrawtransaction *TX_IN_HEXADECIMAL*
 
-`signmessage`
-  Sign a message with a key. If you want to lead or end a message with
-  spaces, or want double spaces inside the message, make sure you surround
-  the string in quotes.
-    Syntax:
-      electrum signmessage *ADDRESS* *MESSAGE*
+`setconfig`: Set a configuration variable.
 
-`signrawtransaction`
-  TBD
+  electrum setconfig *NAME* *VALUE*
 
-`unfreeze`
-  Unfreeze the funds at one of your wallet's addresses.
-    Syntax:
-      electrum unfreeze *ADDRESS*
+`setlabel`: Assign a label to an item.
 
-`validateaddress`
-  Check that the address is valid.
-    Syntax:
-      electrum validateaddress *ADDRESS*
+  electrum setlabel *TX_HASH* *LABEL*
 
-`verifymessage`
-  Verifies a signature. If you want to lead or end a message with spaces,
-  or want double spaces inside the message, make sure you surround the
-  string in quotes.
-    Syntax:
-      electrum verifymessage *ADDRESS* *SIGNATURE* *MESSAGE*
+`signmessage`: Sign a message with a key. If you want to lead or end
+               a message with spaces, or want double spaces inside the
+               message, make sure you surround the string in quotes.
+
+  electrum signmessage *ADDRESS* *MESSAGE*
+
+`signrawtransaction`: Sign a raw transaction.
+
+  electrum signrawtransaction ...
+
+`unfreeze`: Unfreeze the funds at one of your wallet's addresses.
+
+  electrum unfreeze *ADDRESS*
+
+`validateaddress`: Check that the address is valid.
+
+  electrum validateaddress *ADDRESS*
+
+`verifymessage`: Verifies a signature. If you want to lead or end a
+                 message with spaces, or want double spaces inside the
+                 message, make sure you surround the string in quotes.
+
+  electrum verifymessage *ADDRESS* *SIGNATURE* *MESSAGE*
 
 FILES
 -----
