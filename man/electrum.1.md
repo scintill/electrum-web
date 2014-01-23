@@ -29,7 +29,7 @@ OPTIONS
   Load the wallet file *path/to/wallet* instead of the default,
   *~/.electrum/wallets/default_wallet*.
 
-`-p` *type:host:port*, `--port`=*PORT*
+`-p` *type:host:port*, `--proxy`=*PROXY*
   Use the proxy type:host:port to connect to an Electrum server,
   where type is either `socks4`, `socks5` or `http`.
 
@@ -50,7 +50,7 @@ OPTIONS
   Operate in offline mode, useful when no Internet connection is present.
 
 `-C`, `--concealed`
-  Don't echo seed to console, useful when running on potentially
+  Don't echo seed to console, useful when restoring from seed on
   untrusted hosts.
 
 `-h`, `--help`

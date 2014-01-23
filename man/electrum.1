@@ -22,7 +22,7 @@ because it doesn't download the Bitcoin blockchain.
 Load the wallet file \fIpath/to/wallet\fP instead of the default,
 \fI~/.electrum/wallets/default_wallet\fP\&.
 .TP
-\fB\fC-p\fR \fItype:host:port\fP, \fB\fC--port\fR=\fIPORT\fP
+\fB\fC-p\fR \fItype:host:port\fP, \fB\fC--proxy\fR=\fIPROXY\fP
 Use the proxy type:host:port to connect to an Electrum server,
 where type is either \fB\fCsocks4\fR, \fB\fCsocks5\fR or \fB\fChttp\fR\&.
 .TP
@@ -31,7 +31,7 @@ Connect to the Electrum server at \fB\fChost:port\fR, where protocol is either
 \fB\fCt\fR (tcp), \fB\fCh\fR (http), \fB\fCs\fR (tcp+ssl), or \fB\fCg\fR (https). Port should be
 8081 for HTTP, 8082 for HTTPS, 50001 for TCP, or 50002 for SSL.
 .TP
-\fB\fC-g\fR \fI[gui]\fP, \fB\fC--gui\fR=\fIGUI\fP
+\fB\fC-g\fR [\fIgui\fP], \fB\fC--gui\fR=\fIGUI\fP
 Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCtext\fR
 or \fB\fCstdio\fR\&. The default GUI is \fB\fCqt\fR\&.
 .TP
@@ -43,7 +43,7 @@ of electrum\-server.
 Operate in offline mode, useful when no Internet connection is present.
 .TP
 \fB\fC-C\fR, \fB\fC--concealed\fR
-Don't echo seed to console, useful when running on potentially
+Don't echo seed to console, useful when restoring from seed on
 untrusted hosts.
 .TP
 \fB\fC-h\fR, \fB\fC--help\fR
@@ -145,7 +145,7 @@ TBD
 \fB\fChelp\fR
   Print help message.
     Syntax:
-      electrum gethelp
+      electrum help
 .PP
 \fB\fChistory\fR
   Return the transaction history of your wallet.
