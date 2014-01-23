@@ -38,7 +38,7 @@ OPTIONS
   `t` (tcp), `h` (http), `s` (tcp+ssl), or `g` (https). Port should be
   8081 for HTTP, 8082 for HTTPS, 50001 for TCP, or 50002 for SSL.
 
-`-g` *[gui]*, `--gui`=*GUI*
+`-g` [*gui*], `--gui`=*GUI*
   Use the selected GUI, where gui is either `qt`, `lite`, `gtk`, `text`
   or `stdio`. The default GUI is `qt`.
 
@@ -154,7 +154,7 @@ COMMANDS
 `help`
   Print help message.
     Syntax:
-      electrum gethelp
+      electrum help
 
 `history`
   Return the transaction history of your wallet.
