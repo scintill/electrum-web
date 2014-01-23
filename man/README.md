@@ -1,6 +1,8 @@
 # Electrum Man Page
 
-Created with [md2man](https://rubygems.org/gems/md2man).
+Created with [md2man](https://rubygems.org/gems/md2man)
+... and not liking the results. Will re-attempt with
+[pod2man](http://rwmj.wordpress.com/2010/03/30/pod2man-a-great-way-to-write-unix-man-pages/)
 
 ```
 md2man-roff electrum.1.md > electrum.1
