@@ -38,8 +38,7 @@ OPTIONS
 
 `-g` *[gui]*
   Use the selected GUI, where gui is either `qt`, `lite`, `gtk`, `stdio`
-  or `text`.
-  The default GUI is qt.
+  or `text`. The default GUI is qt.
 
 `-o`
   Operate in offline mode, useful when no Internet connection is present.
@@ -61,8 +60,8 @@ ENVIRONMENT
 -----------
 
 `FOOCONF`
-  If non-null the full pathname for an alternate system wide */etc/foo.conf*.
-  Overridden by the `-c` option.
+  If non-null the full pathname for an alternate system wide
+  */etc/foo.conf*. Overridden by the `-c` option.
 
 DIAGNOSTICS
 -----------
@@ -73,14 +72,14 @@ The following diagnostics may be issued on stderr:
   The input file does not look like an archive file.
 
 **Old style baz segments.**
-  `foo` can only handle new style baz segments. COBOL object libraries are not
-  supported in this version.
+  `foo` can only handle new style baz segments. COBOL object libraries
+  are not supported in this version.
 
 BUGS
 ----
 
-The command name should have been chosen more carefully to reflect its
-purpose.
+The command name should have been chosen more carefully to reflect
+its purpose.
 
 AUTHOR
 ------
@@ -90,5 +89,4 @@ Andy Weidenbaum <archbaum@gmail.com>
 SEE ALSO
 --------
 
-bar(1), foo(5), xyzzy(1), [Linux Man Page Howto](
-http://www.schweikhardt.net/man_page_howto.html)
+bar(1), foo(5), xyzzy(1), [Linux Man Page Howto](http://www.schweikhardt.net/man_page_howto.html)
