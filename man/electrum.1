@@ -1,0 +1,81 @@
+.TH ELECTRUM 1.9.7 "JANUARY 2014" Linux "User Manuals"
+.SH NAME
+.PP
+Electrum \- Bitcoin thin client
+.SH SYNOPSIS
+.PP
+\fB\fCelectrum\fR [\fB\fC-w\fR \fIwallet\fP ] [\fB\fC-p\fR \fIproxy\fP ] [\fB\fC-s\fR \fIserver\fP ] [\fB\fC-g\fR \fIgui\fP ] [\fB\fC-o\fR] [\fB\fC-C\fR]
+.SH DESCRIPTION
+.PP
+\fB\fCElectrum\fR is an easy to use Bitcoin wallet. It protects you from
+losing coins in a backup mistake or computer failure, because your
+wallet can be recovered from a secret phrase you can write on paper
+or learn by heart. There's no waiting time when you start Electrum,
+because it doesn't download the Bitcoin blockchain.
+.SH OPTIONS
+.TP
+\fB\fC-w\fR \fI/path/to/wallet.dat\fP
+Load the wallet file \fI/path/to/wallet.dat\fP instead of the default,
+\fI~/.electrum/wallets/default_wallet\fP\&.
+.TP
+\fB\fC-p\fR \fI[type:]host[:port]\fP
+Use the proxy [type:]host[:port] to connect to an Electrum server,
+where type is either \fB\fCsocks4\fR, \fB\fCsocks5\fR or \fB\fChttp\fR\&.
+.TP
+\fB\fC-s\fR \fIhost:port:protocol\fP
+Connect to the Electrum server at \fB\fChost:port\fR, where protocol is either
+\fB\fCt\fR or \fB\fCh\fR\&. Port should be 8081 for HTTP, 8082 for HTTPS, 50001 for TCP,
+or 50002 for SSL.
+.TP
+\fB\fC-g\fR \fI[gui]\fP
+Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCstdio\fR
+or \fB\fCtext\fR\&.
+The default GUI is qt.
+.TP
+\fB\fC-o\fR
+Operate in offline mode, useful when no Internet connection is present.
+.TP
+\fB\fC-C\fR
+Don't echo seed to console, useful when running on potentially
+untrusted hosts.
+.TP
+\fB\fC-v\fR
+Verbose mode. Shows debugging information.
+.SH FILES
+.TP
+\fI~/.electrum/config\fP
+Per user configuration file. See 
+.BR foo (5) 
+for further details.
+.SH ENVIRONMENT
+.TP
+\fB\fCFOOCONF\fR
+If non\-null the full pathname for an alternate system wide \fI/etc/foo.conf\fP\&.
+Overridden by the \fB\fC-c\fR option.
+.SH DIAGNOSTICS
+.PP
+The following diagnostics may be issued on stderr:
+.TP
+\fBBad magic number.\fP
+The input file does not look like an archive file.
+.TP
+\fBOld style baz segments.\fP
+\fB\fCfoo\fR can only handle new style baz segments. COBOL object libraries are not
+supported in this version.
+.SH BUGS
+.PP
+The command name should have been chosen more carefully to reflect its
+purpose.
+.SH AUTHOR
+.PP
+Andy Weidenbaum 
+.MT archbaum@gmail.com
+.ME
+.SH SEE ALSO
+.PP
+.BR bar (1), 
+.BR foo (5), 
+.BR xyzzy (1), 
+Linux Man Page Howto
+.UR http://www.schweikhardt.net/man_page_howto.html
+.UE
