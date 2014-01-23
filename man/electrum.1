@@ -12,241 +12,273 @@ electrum \- Bitcoin thin client ("wallet")
 .SH DESCRIPTION
 .PP
 \fB\fCElectrum\fR is an easy to use Bitcoin wallet. It protects you from
+.br
 losing coins in a backup mistake or computer failure, because your
+.br
 wallet can be recovered from a secret phrase you can write on paper
+.br
 or learn by heart. There's no waiting time when you start Electrum,
+.br
 because it doesn't download the Bitcoin blockchain.
 .SH OPTIONS
-.TP
+.PP
 \fB\fC-w\fR \fIpath/to/wallet\fP, \fB\fC--wallet\fR=\fIWALLET_PATH\fP
+.PP
 Load the wallet file \fIpath/to/wallet\fP instead of the default,
+.br
 \fI~/.electrum/wallets/default_wallet\fP\&.
-.TP
-\fB\fC-p\fR \fItype:host:port\fP, \fB\fC--proxy\fR=\fIPROXY\fP
+.PP
+\fB\fC-p\fR \fItype\fP:\fIhost\fP:\fIport\fP, \fB\fC--proxy\fR=\fIPROXY\fP
+.PP
 Use the proxy type:host:port to connect to an Electrum server,
-where type is either \fB\fCsocks4\fR, \fB\fCsocks5\fR or \fB\fChttp\fR\&.
-.TP
+.br
+where type is either \fIsocks4\fP, \fIsocks5\fP or \fIhttp\fP\&.
+.PP
 \fB\fC-s\fR \fIhost:port:protocol\fP, \fB\fC--server\fR=\fISERVER\fP
-Connect to the Electrum server at \fB\fChost:port\fR, where protocol is either
-\fB\fCt\fR (tcp), \fB\fCh\fR (http), \fB\fCs\fR (tcp+ssl), or \fB\fCg\fR (https). Port should be
-8081 for HTTP, 8082 for HTTPS, 50001 for TCP, or 50002 for SSL.
-.TP
+.PP
+Connect to the Electrum server at host:port, where protocol is either
+.br
+\fIt\fP (tcp), \fIh\fP (http), \fIs\fP (tcp+ssl), or \fIg\fP (https). Port should be
+.br
+8081 for http, 8082 for https, 50001 for tcp, or 50002 for ssl.
+.PP
 \fB\fC-g\fR [\fIgui\fP], \fB\fC--gui\fR=\fIGUI\fP
-Use the selected GUI, where gui is either \fB\fCqt\fR, \fB\fClite\fR, \fB\fCgtk\fR, \fB\fCtext\fR
-or \fB\fCstdio\fR\&. The default GUI is \fB\fCqt\fR\&.
-.TP
+.PP
+Use the selected GUI, where gui is either \fIqt\fP, \fIlite\fP, \fIgtk\fP, \fItext\fP
+.br
+or \fIstdio\fP\&. The default GUI is qt.
+.PP
 \fB\fC-1\fR, \fB\fC--oneserver\fR
+.PP
 Connect to one server only, useful when connecting to a private instance
+.br
 of electrum\-server.
-.TP
+.PP
 \fB\fC-o\fR, \fB\fC--offline\fR
+.PP
 Operate in offline mode, useful when no Internet connection is present.
-.TP
+.PP
 \fB\fC-C\fR, \fB\fC--concealed\fR
+.PP
 Don't echo seed to console, useful when restoring from seed on
+.br
 untrusted hosts.
-.TP
+.PP
 \fB\fC-h\fR, \fB\fC--help\fR
+.PP
 Display help and exit.
-.TP
+.PP
 \fB\fC-v\fR, \fB\fC--verbose\fR
+.PP
 Verbose mode. Shows debugging information.
 .SH COMMANDS
 .PP
 \fB\fCcontacts\fR: Show your list of contacts.
 .IP
-electrum contacts
+$ electrum contacts
 .PP
 \fB\fCcreate\fR: Create a new wallet.
 .IP
-electrum create
+$ electrum create
 .PP
 \fB\fCcreatemultisig\fR: Create a multisignature transaction.
 .IP
-TBD
+$ electrum createmultisig ...
 .PP
 \fB\fCcreaterawtransaction\fR: Create a raw transaction.
 .IP
-TBD
+$ electrum createrawtransaction ...
 .PP
 \fB\fCdecoderawtransaction\fR: Decode a raw transaction.
 .IP
-TBD
+$ electrum decoderawtransaction ...
 .PP
 \fB\fCdeseed\fR: Remove seed from wallet, creating a seedless, watching\-only wallet.
 .IP
-electrum deseed
+$ electrum deseed
 .PP
 \fB\fCdumpprivkey\fR: Dump private key for specified address.
 .IP
-electrum dumpprivkey \fIADDRESS\fP
+$ electrum dumpprivkey \fIADDRESS\fP
 .PP
 \fB\fCdumpprivkeys\fR: Dump all private keys.
 .IP
-electrum dumpprivkeys
+$ electrum dumpprivkeys
 .PP
 \fB\fCfreeze\fR: Freeze the funds at one of your wallet's addresses.
 .IP
-electrum freeze \fIADDRESS\fP
+$ electrum freeze \fIADDRESS\fP
 .PP
 \fB\fCgetaddressbalance\fR: Return the balance of an address.
 .IP
-electrum getaddressbalance \fIADDRESS\fP
+$ electrum getaddressbalance \fIADDRESS\fP
 .PP
 \fB\fCgetaddresshistory\fR: Return the transaction history of a wallet address.
 .IP
-electrum getaddresshistory \fIADDRESS\fP
+$ electrum getaddresshistory \fIADDRESS\fP
 .PP
-\fB\fCgetbalance\fR: Return the balance of your wallet, or of one account in your wallet.
+\fB\fCgetbalance\fR: Return the balance of your wallet, or of one account.
 .IP
-electrum getbalance \fIACCOUNT\fP
+$ electrum getbalance \fIACCOUNT\fP
 .PP
 \fB\fCgetconfig\fR: Return a configuration variable.
 .IP
-electrum getconfig \fINAME\fP
+$ electrum getconfig \fINAME\fP
 .PP
 \fB\fCgetmpk\fR: Return your wallet's master public key.
 .IP
-electrum getmpk
+$ electrum getmpk
 .PP
 \fB\fCgetpubkeys\fR: Return the pubkeys for a wallet address.
 .IP
-electrum getpubkeys \fIADDRESS\fP
+$ electrum getpubkeys \fIADDRESS\fP
 .PP
 \fB\fCgetrawtransaction\fR: Retrieve a transaction.
 .IP
-electrum getrawtransaction \fITX_HASH\fP \fIHEIGHT\fP
+$ electrum getrawtransaction \fITX_HASH\fP \fIHEIGHT\fP
 .PP
 \fB\fCgetseed\fR: Print the generation seed of your wallet.
 .IP
-electrum getseed
+$ electrum getseed
 .PP
 \fB\fCgetservers\fR: Return the list of available servers.
 .IP
-electrum getservers
+$ electrum getservers
 .PP
 \fB\fCgetversion\fR: Return the version of your Electrum client.
 .IP
-electrum getversion
+$ electrum getversion
 .PP
 \fB\fChelp\fR: Print help message.
 .IP
-electrum help
+$ electrum help
 .PP
 \fB\fChistory\fR: Return the transaction history of your wallet.
 .IP
-electrum history
+$ electrum history
 .PP
 \fB\fCimportprivkey\fR: Import a private key into your wallet.
 .IP
-electrum importprivkey \fIPRIVATE_KEY\fP
+$ electrum importprivkey \fIPRIVATE_KEY\fP
 .PP
 \fB\fClistaddresses\fR: Return a list of addresses in your wallet.
 .IP
-electrum listaddresses [\fIoptions\fP]
-.TP
-(options)
-    \fB\fC-a\fR: show all addresses, including change addresses
-.br
-    \fB\fC-l\fR: include labels in results
+$ electrum listaddresses [\fIoptions\fP]
+.PP
+.RS
+.nf
+  -a: show all addresses, including change addresses  
+  -l: include labels in results
+.fi
+.RE
 .PP
 \fB\fClistunspent\fR: Return the list of unspent inputs in your wallet.
 .IP
-electrum listunspent
+$ electrum listunspent
 .PP
 \fB\fCmksendmanytx\fR: Create and broadcast a signed transaction to one or
-                more recipients.
+.br
+              more recipients.
 .IP
-electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...] [\fIoptions\fP]
-.TP
-(options)
-    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
-.br
-    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
-.br
-    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+$ electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...] [\fIoptions\fP]
+.PP
+.RS
+.nf
+  --fee, -f *FEE*: set transaction fee of *FEE*  
+  --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
+  --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
+.fi
+.RE
 .PP
 \fB\fCmktx\fR: Create a signed transaction.
 .IP
-electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP] [\fIoptions\fP]
-.TP
-(options)
-    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
-.br
-    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
-.br
-    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+$ electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP] [\fIoptions\fP]
+.PP
+.RS
+.nf
+  --fee, -f *FEE*: set transaction fee of *FEE*  
+  --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
+  --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
+.fi
+.RE
 .PP
 \fB\fCpassword\fR: Change your wallet password.
 .IP
-electrum password
+$ electrum password
 .PP
 \fB\fCpayto\fR: Create and broadcast a signed transaction.
 .IP
-electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP [\fIoptions\fP]
-.TP
-(options)
-    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
-.br
-    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
-.br
-    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+$ electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP [\fIoptions\fP]
+.PP
+.RS
+.nf
+  --fee, -f *FEE*: set transaction fee of *FEE*  
+  --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
+  --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
+.fi
+.RE
 .IP
 \fIRECIPIENT\fP can be a bitcoin address or an address label.
 .PP
 \fB\fCpaytomany\fR: Create and broadcast a signed transaction to one or more
-             recipients.
+.br
+           recipients.
 .IP
-electrum paytomany \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
-.TP
-(options)
-    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
-.br
-    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
-.br
-    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+$ electrum paytomany \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
+.PP
+.RS
+.nf
+  --fee, -f *FEE*: set transaction fee of *FEE*  
+  --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
+  --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
+.fi
+.RE
 .IP
 \fIRECIPIENT\fP can be a bitcoin address or an address label.  
 .PP
 \fB\fCrestore\fR: Restore a wallet. Accepts a seed or master public key.
 .IP
-electrum restore
+$ electrum restore
 .PP
 \fB\fCsendrawtransaction\fR: Broadcast a signed transaction to the network.
 .IP
-electrum sendrawtransaction \fITX\fIIN\fPHEXADECIMAL\fP
+$ electrum sendrawtransaction \fITX\fIIN\fPHEXADECIMAL\fP
 .PP
 \fB\fCsetconfig\fR: Set a configuration variable.
 .IP
-electrum setconfig \fINAME\fP \fIVALUE\fP
+$ electrum setconfig \fINAME\fP \fIVALUE\fP
 .PP
 \fB\fCsetlabel\fR: Assign a label to an item.
 .IP
-electrum setlabel \fITX_HASH\fP \fILABEL\fP
+$ electrum setlabel \fITX_HASH\fP \fILABEL\fP
 .PP
 \fB\fCsignmessage\fR: Sign a message with a key. If you want to lead or end
-               a message with spaces, or want double spaces inside the
-               message, make sure you surround the string in quotes.
+.br
+             a message with spaces, or want double spaces inside the
+.br
+             message, make sure you surround the string in quotes.
 .IP
-electrum signmessage \fIADDRESS\fP \fIMESSAGE\fP
+$ electrum signmessage \fIADDRESS\fP \fIMESSAGE\fP
 .PP
 \fB\fCsignrawtransaction\fR: Sign a raw transaction.
 .IP
-electrum signrawtransaction ...
+$ electrum signrawtransaction ...
 .PP
 \fB\fCunfreeze\fR: Unfreeze the funds at one of your wallet's addresses.
 .IP
-electrum unfreeze \fIADDRESS\fP
+$ electrum unfreeze \fIADDRESS\fP
 .PP
 \fB\fCvalidateaddress\fR: Check that the address is valid.
 .IP
-electrum validateaddress \fIADDRESS\fP
+$ electrum validateaddress \fIADDRESS\fP
 .PP
 \fB\fCverifymessage\fR: Verifies a signature. If you want to lead or end a
-                 message with spaces, or want double spaces inside the
-                 message, make sure you surround the string in quotes.
+.br
+               message with spaces, or want double spaces inside the
+.br
+               message, make sure you surround the string in quotes.
 .IP
-electrum verifymessage \fIADDRESS\fP \fISIGNATURE\fP \fIMESSAGE\fP
+$ electrum verifymessage \fIADDRESS\fP \fISIGNATURE\fP \fIMESSAGE\fP
 .SH FILES
 .TP
 \fI~/.electrum/config\fP
