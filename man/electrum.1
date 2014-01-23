@@ -61,15 +61,15 @@ electrum contacts
 .IP
 electrum create
 .PP
-\fB\fCcreatemultisig\fR
+\fB\fCcreatemultisig\fR: Create a multisignature transaction.
 .IP
 TBD
 .PP
-\fB\fCcreaterawtransaction\fR
+\fB\fCcreaterawtransaction\fR: Create a raw transaction.
 .IP
 TBD
 .PP
-\fB\fCdecoderawtransaction\fR
+\fB\fCdecoderawtransaction\fR: Decode a raw transaction.
 .IP
 TBD
 .PP
@@ -142,13 +142,13 @@ electrum history
 electrum importprivkey \fIPRIVATE_KEY\fP
 .PP
 \fB\fClistaddresses\fR: Return a list of addresses in your wallet.
+.IP
+electrum listaddresses [\fIoptions\fP]
 .TP
-electrum listaddresses
-    Options:
-      \fB\fC-a\fR
-        show all addresses, including change addresses
-      \fB\fC-l\fR
-        include labels in results
+(options)
+    \fB\fC-a\fR: show all addresses, including change addresses
+.br
+    \fB\fC-l\fR: include labels in results
 .PP
 \fB\fClistunspent\fR: Return the list of unspent inputs in your wallet.
 .IP
@@ -156,57 +156,57 @@ electrum listunspent
 .PP
 \fB\fCmksendmanytx\fR: Create and broadcast a signed transaction to one or
                 more recipients.
+.IP
+electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...] [\fIoptions\fP]
 .TP
-electrum mksendmanytx \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
+(options)
+    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
+.br
+    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
+.br
+    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
 .PP
 \fB\fCmktx\fR: Create a signed transaction.
+.IP
+electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP] [\fIoptions\fP]
 .TP
-electrum mktx \fIRECIPIENT\fP \fIAMOUNT\fP [\fILABEL\fP]
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
+(options)
+    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
+.br
+    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
+.br
+    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
 .PP
 \fB\fCpassword\fR: Change your wallet password.
 .IP
 electrum password
 .PP
 \fB\fCpayto\fR: Create and broadcast a signed transaction.
+.IP
+electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP [\fIoptions\fP]
 .TP
-electrum payto \fIRECIPIENT\fP \fIAMOUNT\fP
-    \fIRECIPIENT\fP can be a bitcoin address or an address label.
+(options)
+    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
 .br
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
+    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
+.br
+    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+.IP
+\fIRECIPIENT\fP can be a bitcoin address or an address label.
 .PP
 \fB\fCpaytomany\fR: Create and broadcast a signed transaction to one or more
              recipients.
-.TP
+.IP
 electrum paytomany \fIRECIPIENT\fP \fIAMOUNT\fP [\fIRECIPIENT\fP \fIAMOUNT\fP ...]
-    \fIRECIPIENT\fP can be a bitcoin address or an address label.
+.TP
+(options)
+    \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP: set transaction fee of \fIFEE\fP
 .br
-    Options:
-      \fB\fC--fee\fR, \fB\fC-f\fR \fIFEE\fP
-        set transaction fee of \fIFEE\fP
-      \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP
-        send from bitcoin address \fIADDRESS\fP
-      \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP
-        send change to bitcoin address \fIADDRESS\fP
+    \fB\fC--fromaddr\fR, \fB\fC-F\fR \fIADDRESS\fP: send from bitcoin address \fIADDRESS\fP
+.br
+    \fB\fC--changeaddr\fR, \fB\fC-c\fR \fIADDRESS\fP: send change to bitcoin address \fIADDRESS\fP
+.IP
+\fIRECIPIENT\fP can be a bitcoin address or an address label.  
 .PP
 \fB\fCrestore\fR: Restore a wallet. Accepts a seed or master public key.
 .IP

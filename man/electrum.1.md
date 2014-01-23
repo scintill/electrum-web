@@ -70,15 +70,15 @@ COMMANDS
 
   electrum create
 
-`createmultisig`
+`createmultisig`: Create a multisignature transaction.
 
   TBD
 
-`createrawtransaction`
+`createrawtransaction`: Create a raw transaction.
 
   TBD
 
-`decoderawtransaction`
+`decoderawtransaction`: Decode a raw transaction.
 
   TBD
 
@@ -152,12 +152,11 @@ COMMANDS
 
 `listaddresses`: Return a list of addresses in your wallet.
 
-  electrum listaddresses
-    Options:
-      `-a`
-        show all addresses, including change addresses
-      `-l`
-        include labels in results
+  electrum listaddresses [*options*]
+
+  (options)
+    `-a`: show all addresses, including change addresses  
+    `-l`: include labels in results
 
 `listunspent`: Return the list of unspent inputs in your wallet.
 
@@ -166,25 +165,21 @@ COMMANDS
 `mksendmanytx`: Create and broadcast a signed transaction to one or
                 more recipients.
 
-  electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
-    Options:
-      `--fee`, `-f` *FEE*
-        set transaction fee of *FEE*
-      `--fromaddr`, `-F` *ADDRESS*
-        send from bitcoin address *ADDRESS*
-      `--changeaddr`, `-c` *ADDRESS*
-        send change to bitcoin address *ADDRESS*
+  electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...] [*options*]
+
+  (options)
+    `--fee`, `-f` *FEE*: set transaction fee of *FEE*  
+    `--fromaddr`, `-F` *ADDRESS*: send from bitcoin address *ADDRESS*  
+    `--changeaddr`, `-c` *ADDRESS*: send change to bitcoin address *ADDRESS*
 
 `mktx`: Create a signed transaction.
 
-  electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*]
-    Options:
-      `--fee`, `-f` *FEE*
-        set transaction fee of *FEE*
-      `--fromaddr`, `-F` *ADDRESS*
-        send from bitcoin address *ADDRESS*
-      `--changeaddr`, `-c` *ADDRESS*
-        send change to bitcoin address *ADDRESS*
+  electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*] [*options*]
+
+  (options)
+    `--fee`, `-f` *FEE*: set transaction fee of *FEE*  
+    `--fromaddr`, `-F` *ADDRESS*: send from bitcoin address *ADDRESS*  
+    `--changeaddr`, `-c` *ADDRESS*: send change to bitcoin address *ADDRESS*
 
 `password`: Change your wallet password.
 
@@ -192,28 +187,26 @@ COMMANDS
 
 `payto`: Create and broadcast a signed transaction.
 
-  electrum payto *RECIPIENT* *AMOUNT*
-    *RECIPIENT* can be a bitcoin address or an address label.  
-    Options:
-      `--fee`, `-f` *FEE*
-        set transaction fee of *FEE*
-      `--fromaddr`, `-F` *ADDRESS*
-        send from bitcoin address *ADDRESS*
-      `--changeaddr`, `-c` *ADDRESS*
-        send change to bitcoin address *ADDRESS*
+  electrum payto *RECIPIENT* *AMOUNT* [*options*]
+
+  (options)
+    `--fee`, `-f` *FEE*: set transaction fee of *FEE*  
+    `--fromaddr`, `-F` *ADDRESS*: send from bitcoin address *ADDRESS*  
+    `--changeaddr`, `-c` *ADDRESS*: send change to bitcoin address *ADDRESS*
+
+  *RECIPIENT* can be a bitcoin address or an address label.
 
 `paytomany`: Create and broadcast a signed transaction to one or more
              recipients.
 
   electrum paytomany *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
-    *RECIPIENT* can be a bitcoin address or an address label.  
-    Options:
-      `--fee`, `-f` *FEE*
-        set transaction fee of *FEE*
-      `--fromaddr`, `-F` *ADDRESS*
-        send from bitcoin address *ADDRESS*
-      `--changeaddr`, `-c` *ADDRESS*
-        send change to bitcoin address *ADDRESS*
+
+  (options)
+    `--fee`, `-f` *FEE*: set transaction fee of *FEE*  
+    `--fromaddr`, `-F` *ADDRESS*: send from bitcoin address *ADDRESS*  
+    `--changeaddr`, `-c` *ADDRESS*: send change to bitcoin address *ADDRESS*
+
+  *RECIPIENT* can be a bitcoin address or an address label.  
 
 `restore`: Restore a wallet. Accepts a seed or master public key.
 
