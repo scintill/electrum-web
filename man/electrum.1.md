@@ -175,7 +175,7 @@ COMMANDS
 
   $ electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...] [*options*]
 
-      --fee, -f *FEE*: set transaction fee of *FEE*  
+      --fee, -f *FEE*: set transaction fee to *FEE*  
       --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
       --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
 
@@ -183,7 +183,7 @@ COMMANDS
 
   $ electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*] [*options*]
 
-      --fee, -f *FEE*: set transaction fee of *FEE*  
+      --fee, -f *FEE*: set transaction fee to *FEE*  
       --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
       --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
 
@@ -195,7 +195,7 @@ COMMANDS
 
   $ electrum payto *RECIPIENT* *AMOUNT* [*options*]
 
-      --fee, -f *FEE*: set transaction fee of *FEE*  
+      --fee, -f *FEE*: set transaction fee to *FEE*  
       --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
       --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
 
@@ -206,7 +206,7 @@ COMMANDS
 
   $ electrum paytomany *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
 
-      --fee, -f *FEE*: set transaction fee of *FEE*  
+      --fee, -f *FEE*: set transaction fee to *FEE*  
       --fromaddr, -F *ADDRESS*: send from bitcoin address *ADDRESS*  
       --changeaddr, -c *ADDRESS*: send change to bitcoin address *ADDRESS*
 
