@@ -64,9 +64,13 @@ COMMANDS
 
 `contacts`
   Show your list of contacts.
+    Syntax:
+      electrum contacts
 
 `create`
   Create a new wallet.
+    Syntax:
+      electrum create
 
 `createmultisig`
   TBD
@@ -79,174 +83,205 @@ COMMANDS
 
 `deseed`
   Remove seed from wallet, creating a seedless, watching-only wallet.
+    Syntax:
+      electrum deseed
 
 `dumpprivkey`
   Dump private key for specified address.
-    Syntax: electrum dumpprivkey {address}
+    Syntax:
+      electrum dumpprivkey *ADDRESS*
 
 `dumpprivkeys`
   Dump all private keys.
+    Syntax:
+      electrum dumpprivkeys
 
 `freeze`
   Freeze the funds at one of your wallet's addresses.
-    Syntax: electrum freeze {address}
+    Syntax:
+      electrum freeze *ADDRESS*
 
 `getaddressbalance`
   Return the balance of an address.
-    Syntax: electrum getaddressbalance {address}
+    Syntax:
+      electrum getaddressbalance *ADDRESS*
 
 `getaddresshistory`
   Return the transaction history of a wallet address.
-    Syntax: electrum getaddresshistory {address}
+    Syntax:
+      electrum getaddresshistory *ADDRESS*
 
 `getbalance`
   Return the balance of your wallet, or of one account in your wallet.
-    Syntax: electrum getbalance {account}
+    Syntax:
+      electrum getbalance *ACCOUNT*
 
 `getconfig`
   Return a configuration variable.
-    Syntax: electrum getconfig {name}
+    Syntax:
+      electrum getconfig *NAME*
 
 `getmpk`
   Return your wallet's master public key.
-    Syntax: electrum getmpk
+    Syntax:
+      electrum getmpk
 
 `getpubkeys`
   Return the pubkeys for a wallet address.
-    Syntax: electrum getpubkeys {address}
+    Syntax:
+      electrum getpubkeys *ADDRESS*
 
 `getrawtransaction`
   Retrieve a transaction.
-    Syntax: electrum getrawtransaction {txhash} {height}
+    Syntax:
+      electrum getrawtransaction *TX_HASH* *HEIGHT*
 
 `getseed`
   Print the generation seed of your wallet.
-    Syntax: electrum getseed
+    Syntax:
+      electrum getseed
 
 `getservers`
   Return the list of available servers.
-    Syntax: electrum getservers
+    Syntax:
+      electrum getservers
 
 `getversion`
   Return the version of your client.
-    Syntax: electrum getversion
+    Syntax:
+      electrum getversion
 
 `help`
-  Print help.
-    Syntax: electrum gethelp
+  Print help message.
+    Syntax:
+      electrum gethelp
 
 `history`
   Return the transaction history of your wallet.
-    Syntax: electrum history
+    Syntax:
+      electrum history
 
 `importprivkey`
   Import a private key into your wallet.
-    Syntax: electrum importprivkey {privatekey}
+    Syntax:
+      electrum importprivkey *PRIVATE_KEY*
 
 `listaddresses`
   Return a list of addresses in your wallet.
     Syntax:
       electrum listaddresses
     Options:
-      -a
+      `-a`
         show all addresses, including change addresses
-      -l
+      `-l`
         include labels in results
 
 `listunspent`
   Return the list of unspent inputs in your wallet.
-    Syntax: electrum listunspent
+    Syntax:
+      electrum listunspent
 
 `mksendmanytx`
   Create and broadcast a signed transaction to one or more recipients.
     Syntax:
-      electrum mksendmanytx {recipient} {amount} [{recipient} {amount} ...]
+      electrum mksendmanytx *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
     Options:
-      --fee, -f
-        set transaction fee
-      --fromaddr, -F
-        send from address {address}
-      --changeaddr, -c
-        send change to address
+      `--fee`, `-f` *FEE*
+        set transaction fee of *FEE*
+      `--fromaddr`, `-F` *ADDRESS*
+        send from bitcoin address *ADDRESS*
+      `--changeaddr`, `-c` *ADDRESS*
+        send change to bitcoin address *ADDRESS*
 
 `mktx`
   Create a signed transaction.
     Syntax:
-      electrum mktx {recipient} {amount} [label]
+      electrum mktx *RECIPIENT* *AMOUNT* [*LABEL*]
     Options:
-      --fee, -f
-        set transaction fee
-      --fromaddr, -F
-        send from address {address}
-      --changeaddr, -c
-        send change to address
+      `--fee`, `-f` *FEE*
+        set transaction fee of *FEE*
+      `--fromaddr`, `-F` *ADDRESS*
+        send from bitcoin address *ADDRESS*
+      `--changeaddr`, `-c` *ADDRESS*
+        send change to bitcoin address *ADDRESS*
 
 `password`
   Change your wallet password.
-    Syntax: electrum password
+    Syntax:
+      electrum password
 
 `payto`
-  Create and broadcast a transaction.
-    Syntax: payto {recipient} {amount}
-      {recipient} can be a bitcoin address or a label
+  Create and broadcast a signed transaction.
+    Syntax:
+      electrum payto *RECIPIENT* *AMOUNT*
+        *RECIPIENT* can be a bitcoin address or a label
     Options:
-      --fee, -f
-        set transaction fee
-      --fromaddr, -F
-        send from address {address}
-      --changeaddr, -c
-        send change to address
+      `--fee`, `-f` *FEE*
+        set transaction fee of *FEE*
+      `--fromaddr`, `-F` *ADDRESS*
+        send from bitcoin address *ADDRESS*
+      `--changeaddr`, `-c` *ADDRESS*
+        send change to bitcoin address *ADDRESS*
 
 `paytomany`
-  Create and broadcast a transaction to one or more recipients.
-    Syntax: payto {recipient} {amount} [{recipient} {amount} ...]
-      {recipient} can be a bitcoin address or a label
+  Create and broadcast a signed transaction to one or more recipients.
+    Syntax:
+      electrum paytomany *RECIPIENT* *AMOUNT* [*RECIPIENT* *AMOUNT* ...]
+        *RECIPIENT* can be a bitcoin address or an address label
     Options:
-      --fee, -f
-        set transaction fee
-      --fromaddr, -F
-        send from address {address}
-      --changeaddr, -c
-        send change to address
+      `--fee`, `-f` *FEE*
+        set transaction fee of *FEE*
+      `--fromaddr`, `-F` *ADDRESS*
+        send from bitcoin address *ADDRESS*
+      `--changeaddr`, `-c` *ADDRESS*
+        send change to bitcoin address *ADDRESS*
 
 `restore`
   Restore a wallet. Accepts a seed or master public key.
-    Syntax: electrum restore
+    Syntax:
+      electrum restore
 
 `sendrawtransaction`
   Broadcast a signed transaction to the network.
-    Syntax: electrum sendrawtransaction {tx in hexadecimal}
+    Syntax:
+      electrum sendrawtransaction *TX_IN_HEXADECIMAL*
 
 `setconfig`
   Set a configuration variable.
-    Syntax: electrum setconfig {name} {value}
+    Syntax:
+      electrum setconfig *NAME* *VALUE*
 
 `setlabel`
   Assign a label to an item.
-    Syntax: electrum setlabel {tx_hash} {label}
+    Syntax:
+      electrum setlabel *TX_HASH* *LABEL*
 
 `signmessage`
   Sign a message with a key. If you want to lead or end a message with
   spaces, or want double spaces inside the message, make sure you surround
   the string in quotes.
-    Syntax: electrum signmessage {address} {message}
+    Syntax:
+      electrum signmessage *ADDRESS* *MESSAGE*
 
 `signrawtransaction`
   TBD
 
 `unfreeze`
   Unfreeze the funds at one of your wallet's addresses.
-    Syntax: electrum unfreeze {address}
+    Syntax:
+      electrum unfreeze *ADDRESS*
 
 `validateaddress`
   Check that the address is valid.
-    Syntax: electrum validateaddress {address}
+    Syntax:
+      electrum validateaddress *ADDRESS*
 
 `verifymessage`
   Verifies a signature. If you want to lead or end a message with spaces,
   or want double spaces inside the message, make sure you surround the
   string in quotes.
-    Syntax: electrum verifymessage {address} {signature} {message}
+    Syntax:
+      electrum verifymessage *ADDRESS* *SIGNATURE* *MESSAGE*
 
 FILES
 -----
@@ -261,8 +296,8 @@ ENVIRONMENT
   If non-null the full pathname for an alternate system wide
   */etc/foo.conf*. Overridden by the `-c` option.
 
-DIAGNOSTICS
------------
+EXAMPLES
+--------
 
 The following diagnostics may be issued on stderr:
 
