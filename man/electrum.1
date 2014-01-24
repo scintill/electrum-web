@@ -10,7 +10,7 @@
 \fBelectrum\fR [\fIoptions\fR] \fIcommand\fR [\fIargs\fR] [\fIoptions\fR]
 .
 .br
-\fBelectrum\fR [\fB\-w\fR \fIwallet\fR ] [\fB\-p\fR \fIproxy\fR ] [\fB\-s\fR \fIserver\fR ] [\fB\-g\fR \fIgui\fR ] \fIcommand\fR [\fB\-1\fR] [\fB\-o\fR] [\fB\-C\fR]
+\fBelectrum\fR [\fB\-g\fR \fIgui\fR] [\fB\-w\fR \fIwallet\fR] [\fB\-p\fR \fIproxy\fR] [\fB\-s\fR \fIserver\fR] \fIcommand\fR [\fB\-1\fR] [\fB\-o\fR] [\fB\-C\fR]
 .
 .br
 \fBelectrum \-v\fR
@@ -402,6 +402,45 @@ $ electrum \-p socks5:127\.0\.0\.1:9050 \-s electrum\.3g2upl4pq6kufc4m\.onion:50
 .IP "" 0
 .
 .P
+\fBCreate, sign and send a raw transaction\fR
+.
+.IP "" 4
+.
+.nf
+
+$ electrum \-w wallet\.dat\.seedless listunspent
+[
+    {
+        "address": "1AwViD7ewnVVrzt58ffQdheyTxMGhAshJ6",
+        "index": 0,
+        "raw_output_script": "76a9146d078f704c400f1840d02f4239ea8f40ce5a847488ac",
+        "tx_hash": "cfed2aac04b2823a679d5d5956462b086ac8d47252d0a5506f9b8d5172d99f75",
+        "value": "4"
+    }
+]
+
+$ electrum \-w wallet\.dat\.seedless createrawtransaction \'[{"txid" : "cfed2aac04b2823a679d5d5956462b086ac8d47252d0a5506f9b8d5172d99f75","vout":0}]\' \'{"34PTJeM3gtGSk3fqAJ4iWcEsbip46cbDVw":0\.001,"1MbbbLkwLUvP4hXiDLE1Ma42sz9T3J89TG":3\.9988}\'
+{
+    "complete": false,
+    "hex": "0100000001759fd972518d9b6f50a5d05272d4c86a082b4656595d9d673a82b204ac2aedcf0000000000ffffffff02a08601000000000017a9141d9613bb16091ab2876c829e6bd5f56bed14b9ed8740afd517000000001976a914e1ed88cdd3ff3eead6ebffca4493465b44db983a88ac00000000",
+    "input_info": "[{\e"redeemScript\e":null,\e"signatures\e":null,\e"vout\e":0,\e"txid\e":\e"cfed2aac04b2823a679d5d5956462b086ac8d47252d0a5506f9b8d5172d99f75\e",\e"KeyID\e":null,\e"pubkeys\e":null,\e"scriptPubKey\e":null}]"
+}
+
+$ electrum \-w wallet\.dat signrawtransaction \'0100000001759fd972518d9b6f50a5d05272d4c86a082b4656595d9d673a82b204ac2aedcf0000000000ffffffff02a08601000000000017a9141d9613bb16091ab2876c829e6bd5f56bed14b9ed8740afd517000000001976a914e1ed88cdd3ff3eead6ebffca4493465b44db983a88ac00000000\'
+{
+    "complete": true,
+    "hex": "0100000001759fd972518d9b6f50a5d05272d4c86a082b4656595d9d673a82b204ac2aedcf000000008b483045022100a8065915b3ad1fa3e41db8d06cecdc11a938671369707e2ee390c1452eb930aa02202dde6b18a6c9f54497ef719784feb9e0a8cb5fc4007ac4f40c5dc73bb3cb6a130141045ce62c5a778c083f623e720e99e00e56235578d22c4b7cebec5c42d4cf86d1b8aa5af0f1f5846e899c98605cbad41a4161d200ce929db5e867977912c2415340ffffffff02a08601000000000017a9141d9613bb16091ab2876c829e6bd5f56bed14b9ed8740afd517000000001976a914e1ed88cdd3ff3eead6ebffca4493465b44db983a88ac00000000"
+}
+
+$ electrum \-w wallet\.dat\.seedless sendrawtransaction 0100000001759fd972518d9b6f50a5d05272d4c86a082b4656595d9d673a82b204ac2aedcf000000008b483045022100a8065915b3ad1fa3e41db8d06cecdc11a938671369707e2ee390c1452eb930aa02202dde6b18a6c9f54497ef719784feb9e0a8cb5fc4007ac4f40c5dc73bb3cb6a130141045ce62c5a778c083f623e720e99e00e56235578d22c4b7cebec5c42d4cf86d1b8aa5af0f1f5846e899c98605cbad41a4161d200ce929db5e867977912c2415340ffffffff02a08601000000000017a9141d9613bb16091ab2876c829e6bd5f56bed14b9ed8740afd517000000001976a914e1ed88cdd3ff3eead6ebffca4493465b44db983a88ac00000000
+Connected to electrum\.pdmc\.net:50002
+"be96b4426ca9ecff46a45c90f2ffbd12af5ea42c590180d309a5958a1327fa50"
+.
+.fi
+.
+.IP "" 0
+.
+.P
 \fBRestore a wallet offline, without echoing seed to console, in an encfs sandbox\fR
 .
 .IP "" 4
@@ -468,4 +507,4 @@ Report issues at \fIhttps://github\.com/spesmilo/electrum/issues\fR\.
 This manual page was written by Andy Weidenbaum\. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation\.
 .
 .SH "SEE ALSO"
-electrum\-server(1)
+electrum\-server(1), bitcoind(1), quixand(1)

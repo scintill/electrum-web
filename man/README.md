@@ -1,10 +1,10 @@
 # Electrum Man Page
 
-Created with [ronn](http://rtomayko.github.io/ronn/). ronn is
+Created with [ronn](http://rtomayko.github.io/ronn/). `ronn` is
 markdown for man pages.
 
 ```
-ronn --manual="Electrum" --organization="Electrum 1.9.7" --date="2014-01-23" electrum.1.ronn
+ronn --manual="Electrum" --organization="Electrum 1.9.7" --date="2014-01-24" electrum.1.ronn
 ```
 
 or:
@@ -12,7 +12,7 @@ or:
 ```
 RONN_MANUAL="Electrum"
 RONN_ORGANIZATION="Electrum 1.9.7"
-RONN_DATE="2014-01-23"
+RONN_DATE="2014-01-24"
 ronn electrum.1.ronn
 ```
 
