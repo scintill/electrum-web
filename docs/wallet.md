@@ -168,6 +168,7 @@ Guides
 
 - Brain Wallets Done Right: Highly Secure Paperless, Diskless Cold Storage
 - Paper Wallet Guide
+- Electrum Dice: Generate a Wallet Offline Without a Computerized RNG
 - Offline Wallets & Offline Transactions Guide
 - How to Restore Your Wallet From Seed
 - Importing Bitcoin Private Keys from Other Wallets into Electrum
