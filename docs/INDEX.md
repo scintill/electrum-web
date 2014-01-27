@@ -31,9 +31,9 @@ recorded. Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out
 to help Bitcoin users avoid future thefts by making centralized servers
 and trust hierarchies unnecessary for convenient, daily usage of Bitcoin.
 
-Thomas began work on a special kind of Bitcoin wallet. Remarkably, his
-new wallet could decouple itself from burdensome software dependencies,
-while still giving users full control, with ease.
+Thomas began work on a special kind of Bitcoin wallet. It would be
+simple and easy to use. It would be portable, modular and have very few
+dependencies, yet it would access the full power of the Bitcoin.
 
 This made Electrum just as convenient to use as any Website. It meant
 Electrum would start instantly, and it meant Electrum could run on
