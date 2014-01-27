@@ -37,18 +37,30 @@ unchecked. Bitcoin users deserved better.
 
 Thomas began working on a special kind of Bitcoin wallet. Enlisting the
 help of the most prolific Bitcoin developers of the day, Thomas would
-make sure Electrum was simple, and easy to use, so that people would use
-it and love it. Electrum would run everywhere there was a Web browser:
-Windows, Mac OS/X, Android, GNU/Linux and \*BSD were fully supported.
+make sure Electrum was simple, and easy to use. It had to be so good,
+so *clearly superior* to Websites that people would actually prefer
+it on the open market.
 
-Electrum has since seen thousands of hours of development time. It has
-become a finely tuned and proven Bitcoin wallet with tens of thousands
-of users, who range from novices to Bitcoin exchange operators and
-core developers.
+Firstly, Electrum would have to run everywhere there was a Web browser:
+on Windows, Mac OS/X, Android, iOS, GNU/Linux and \*BSD.
+
+Second, Electrum would need to start instantly.
+
+Third, Electrum would have to be easy to use and reasonably forgiving
+of mistakes.
+
+Importantly, Electrum would have to accomplish this without the need
+for trusted third parties.
+
+Since 2011, Electrum has seen thousands of hours of development time. It
+has become a finely tuned and proven Bitcoin wallet with tens of thousands
+of satisfied users, who range from Bitcoin novices to Bitcoin exchange
+operators and core developers.
 
 To this day, Electrum remains simple and easy to use. No finnicky gadgets
-are required. No Internet connection is required. You don't have to
-trust anyone with your coins. Welcome to the future of secure banking.
+are required. It runs and Python extensible. No Internet connection is
+required. You don't have to trust anyone with your money. We beleive
+this is the future of secure, P2P banking.
 
 #### About the Docs
 
