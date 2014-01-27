@@ -33,13 +33,14 @@ Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out to
 rectify the situation.
 
 Thomas would not stop until centralized wallet services like MyBitcoin.com
-were finished, and put to rest.
+were finished, and put to rest. Online services simply couldn't be
+trusted to hold Bitcoin reserves unchecked.
 
-He began work on a special kind of Bitcoin wallet, enlisting the help
-of some of the most prolific Bitcoin developers around. Electrum would
-be simple, and easy to use. It would run everywhere there was a Web
-browser and then some: Windows, Mac OS/X, Android, GNU/Linux and \*BSD
-were fully supported.
+And so, he began working on a special kind of Bitcoin wallet. Enlisting
+the help of the most prolific Bitcoin developers of the day, Thomas would
+make sure Electrum was simple, and easy to use, so that people would use
+it and love it. Electrum would run everywhere there was a Web browser:
+Windows, Mac OS/X, Android, GNU/Linux and \*BSD were fully supported.
 
 In subsequent years, Electrum has seen thousands of hours of development
 time. It has become a finely tuned and proven Bitcoin wallet with tens of
