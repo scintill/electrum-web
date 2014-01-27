@@ -48,8 +48,8 @@ of users, who range from novices to Bitcoin exchange operators and
 core developers.
 
 To this day, Electrum remains simple and easy to use. No finnicky gadgets
-are required. No Internet connection is required, and you don't have to
-trust anyone.
+are required. No Internet connection is required. You don't have to
+trust anyone with your coins. Welcome to the future of secure banking.
 
 #### About the Docs
 
