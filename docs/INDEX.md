@@ -14,7 +14,7 @@ INDEX
   * [Troubleshooting](https://docs.electrum.org/troubleshooting)
   * [Developing](https://docs.electrum.org/developing)
   * [Glossary](https://docs.electrum.org/glossary)
-  * [FAQ](https://electrum.org/faq)
+  * [FAQ](https://electrum.org/support/faq)
   * [Support](https://electrum.org/support)
 
 
