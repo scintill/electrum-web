@@ -32,14 +32,13 @@ stolen. Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out
 to help Bitcoin users avoid future thefts by making centralized services
 completely unnecessary for convenient, daily usage of Bitcoin.
 
-Thomas began work on a special kind of Bitcoin wallet. Electrum would be
-simple and easy to use. It would be portable and modular. Remarkably,
-Electrum would decouple itself from the much larger and heavier
-`bitcoind`.
-
-This made Electrum just as convenient to use as any Website. It meant
-Electrum would start instantly, and it meant Electrum could run on
-virtually all available computing platforms, Android included.
+Thomas began work on a special kind of Bitcoin wallet. To compete
+head-to-head with online wallets, Electrum needed to be simple and easy
+to use. In addition, it would need to be highly portable. Remarkably,
+Electrum would accomplish this by decoupling itself from the much
+larger and heavier `bitcoind`, and focusing much more heavily on the
+user experience. This meant Electrum would start instantly, and it meant
+Electrum could run on Windows, Mac OS/X, Android, GNU/Linux, and \*BSD.
 
 In subsequent years, Electrum has seen thousands of hours of development
 time. It has become a mature and proven Bitcoin wallet for tens of
