@@ -36,8 +36,8 @@ Thomas would not stop until centralized wallet services like MyBitcoin.com
 were finished, and put to rest.
 
 Thomas began work on a special kind of Bitcoin wallet. It was simple,
-and easy to use. In addition, ran everywhere a Web browser would: Windows,
-Mac OS/X, Android and GNU/Linux were fully supported.
+and easy to use. In addition, Electrum would run everywhere a Web browser
+would: Windows, Mac OS/X, Android and GNU/Linux were fully supported.
 
 In subsequent years, Electrum has seen thousands of hours of development
 time. It has become a finely tuned and proven Bitcoin wallet with tens of
