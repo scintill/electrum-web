@@ -26,6 +26,41 @@ INDEX
 
 #### The Story of Electrum
 
+Electrum was created in 2011, in the midst of the largest ever online
+Bitcoin wallet theft. Over 75,000 BTC had been stolen.
+
+Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out to
+rectify the situation.
+
+Online services simply couldn't be trusted to hold Bitcoin reserves
+unchecked. Bitcoin users deserved better.
+
+Thomas began working on a special kind of Bitcoin wallet. Enlisting the
+help of the most prolific Bitcoin developers of the day, Thomas would
+make sure Electrum was simple, and easy to use. It had to be so good,
+so *clearly superior* to Websites that Bitcoin users would actually
+prefer it on the open market.
+
+Firstly, Electrum would have to run everywhere there was a Web
+browser.
+
+Second, Electrum would need to start instantly.
+
+Third, Electrum would have to be forgiving of mistakes.
+
+Last but not least, Electrum would need to accomplish this without the
+need for trusted third parties.
+
+Since 2011, Electrum has seen thousands of hours of development time. It
+has become a popular and widely proven Bitcoin wallet with tens of
+thousands of satisfied users, who range from Bitcoin novices to core
+Bitcoin developers.
+
+To this day, Electrum remains simple and easy to use. No extra gadgetry
+is required. It runs everywhere and it's Python extensible. No Internet
+connection is needed. You don't have to trust anyone else with your
+money. Welcome to the future of secure, P2P banking.
+
 ```
 :'::.:::::.:::.::.:
 : :.: ' ' ' ' : :':
