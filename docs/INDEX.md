@@ -38,8 +38,7 @@ blockchain.
 
 This made Electrum just as convenient to use as any Website. It meant
 Electrum would start instantly, and it meant Electrum could run on
-virtually all available computing platforms including Android. This while
-maintaining access to the full power of Bitcoin.
+virtually all available computing platforms including Android.
 
 In subsequent years, Electrum has seen thousands of commits by dozens
 of contributors on GitHub. Today it's a mature and proven Bitcoin wallet
