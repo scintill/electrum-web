@@ -35,8 +35,8 @@ rectify the situation.
 Online services simply couldn't be trusted to hold Bitcoin reserves
 unchecked. Bitcoin users deserved better.
 
-And so, he began working on a special kind of Bitcoin wallet. Enlisting
-the help of the most prolific Bitcoin developers of the day, Thomas would
+Thomas began working on a special kind of Bitcoin wallet. Enlisting the
+help of the most prolific Bitcoin developers of the day, Thomas would
 make sure Electrum was simple, and easy to use, so that people would use
 it and love it. Electrum would run everywhere there was a Web browser:
 Windows, Mac OS/X, Android, GNU/Linux and \*BSD were fully supported.
