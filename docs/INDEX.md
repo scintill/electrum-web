@@ -45,19 +45,18 @@ contributors on GitHub. Today, it's a mature and proven Bitcoin wallet.
 It remains simple and easy to use. There's no gadgetry required, and
 you don't have to trust anyone.
 
+Electrum is well-suited for all kinds of use cases. Users range from
+Bitcoin exchange operators to core Bitcoin developers, from novice to
+professional. Electrum is powerful, extensible, and completely open
+source.
+
 #### About the Docs
 
-This documetation will attempt to guide you through Electrum's most
-foundational features. We'll start with the essentials: installation and
-wallet setup. Then we'll cover the philosophy of use: why does Electrum
-work the way it does, and when should you consider using it?
+This documentation will guide you through Electrum's foundational
+features.
 
-We'll take you through the basics of using Electrum in daily life,
-and we'll cover advanced features for expert users.
-
-Electrum is well-suited for all kinds of use cases, but it's very
-powerful, and very extensible. We'll cover Electrum plugin development,
-and community standards for contributing to the main codebase.
+We'll begin with the essentials and move to advanced features for
+expert users.
 
 
 --------------------------------------------------------------------------------
