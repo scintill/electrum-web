@@ -30,7 +30,7 @@ Electrum was created in 2011, in the midst of the largest online Bitcoin
 wallet theft ever perpetrated. Over 75,000 BTC had been stolen.
 
 Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out to
-rectify this.
+rectify the situation.
 
 Thomas would not stop until centralized wallet services like MyBitcoin.com
 were finished, and put to rest.
