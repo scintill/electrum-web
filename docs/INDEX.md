@@ -42,10 +42,10 @@ make sure Electrum was simple, and easy to use, so that people would use
 it and love it. Electrum would run everywhere there was a Web browser:
 Windows, Mac OS/X, Android, GNU/Linux and \*BSD were fully supported.
 
-In subsequent years, Electrum has seen thousands of hours of development
-time. It has become a finely tuned and proven Bitcoin wallet with tens of
-thousands of users, who range from novices to Bitcoin exchange operators
-and core developers.
+Electrum has since seen thousands of hours of development time. It has
+become a finely tuned and proven Bitcoin wallet with tens of thousands
+of users, who range from novices to Bitcoin exchange operators and
+core developers.
 
 To this day, Electrum remains simple and easy to use. No finnicky gadgets
 are required. No Internet connection is required, and you don't have to
