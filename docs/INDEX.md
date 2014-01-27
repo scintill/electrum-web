@@ -26,15 +26,14 @@ INDEX
 
 #### The Story of Electrum
 
-Electrum was created in 2011, in the midst of the largest online Bitcoin
-wallet theft ever perpetrated. Over 75,000 BTC had been stolen.
+Electrum was created in 2011, in the midst of the largest ever online
+Bitcoin wallet theft. Over 75,000 BTC had been stolen.
 
 Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out to
 rectify the situation.
 
-Thomas would not stop until centralized wallet services like MyBitcoin.com
-were finished, and put to rest. Online services simply couldn't be
-trusted to hold Bitcoin reserves unchecked.
+Online services simply couldn't be trusted to hold Bitcoin reserves
+unchecked. Bitcoin users deserved better.
 
 And so, he began working on a special kind of Bitcoin wallet. Enlisting
 the help of the most prolific Bitcoin developers of the day, Thomas would
