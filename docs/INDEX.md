@@ -59,8 +59,33 @@ operators and core developers.
 
 To this day, Electrum remains simple and easy to use. No finnicky gadgets
 are required. It runs and Python extensible. No Internet connection is
-required. You don't have to trust anyone with your money. We beleive
-this is the future of secure, P2P banking.
+required. You don't have to trust anyone with your money. Welcome to
+the future of secure, P2P banking.
+
+```
+:'::.:::::.:::.::.:
+: :.: ' ' ' ' : :':
+:.:     _.__    '.:             Welcome to ecdsa.org
+:   _,^"   "^x,   :
+'  x7'        `4,
+ XX7            4XX             Support this node:
+ XX              XX             1NTiGdrGgQrA46x9dv7XKhznKgcHrhVxo
+ Xl ,xxx,   ,xxx,XX
+( ' _,+o, | ,o+,"
+ 4   "-^' X "^-'" 7             Electrum is free software; you may
+ l,     ( ))     ,X             operate your own Electrum server.
+ :Xx,_ ,xXXXxx,_,XX             See http://electrum.org
+  4XXiX'-___-`XXXX'
+   4XXi,_   _iXX7'
+  , `4XXXXXXXXX^ _,             Help us make Electrum available in your language:
+  Xx,  ""^^^XX7,xX              https://en.bitcoin.it/wiki/Electrum/Translation
+W,"4WWx,_ _,XxWWX7'
+Xwi, "4WW7""4WW7',W
+TXXWw, ^7 Xk 47 ,WH
+:TXXXWw,_ "), ,wWT:
+::TTXXWWW lXl WWT:
+```
+
 
 #### About the Docs
 
@@ -355,3 +380,15 @@ And of course, **remember to rename your rules** when experimental features ship
   * [Contact](/contact)
 
 Something went wrong with that request. Please try again.
+post_install() {
+  update-desktop-database -q
+  printf "$ecdsa\n"
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  update-desktop-database -q
+}
