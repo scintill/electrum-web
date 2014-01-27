@@ -40,11 +40,10 @@ This made Electrum just as convenient to use as any Website. It meant
 Electrum would start instantly, and it meant Electrum could run on
 virtually all available computing platforms including Android.
 
-In subsequent years, Electrum has seen thousands of commits by dozens
-of contributors on GitHub. Today it's a mature and proven Bitcoin wallet
-that remains simple and easy to use. With it, you can take full control
-over your own money. There's no gadgetry required, and you don't have
-to trust anyone.
+In subsequent years, Electrum has seen thousands of commits by dozens of
+contributors on GitHub. Today, it's a mature and proven Bitcoin wallet.
+It remains simple and easy to use. There's no gadgetry required, and
+you don't have to trust anyone.
 
 #### About the Docs
 
