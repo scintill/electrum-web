@@ -1,6 +1,8 @@
 INDEX
 =====
 
+## Table of Contents
+
   * [Overview](https://docs.electrum.org)
   * [Quick Start](https://docs.electrum.org/quick-start)
   * [Installation](https://docs.electrum.org/install)
