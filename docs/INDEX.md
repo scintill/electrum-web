@@ -57,10 +57,10 @@ has become a finely tuned and proven Bitcoin wallet with tens of thousands
 of satisfied users, who range from Bitcoin novices to Bitcoin exchange
 operators and core developers.
 
-To this day, Electrum remains simple and easy to use. No finnicky gadgets
-are required. It runs and Python extensible. No Internet connection is
-required. You don't have to trust anyone with your money. Welcome to
-the future of secure, P2P banking.
+To this day, Electrum remains simple and easy to use. No finnicky
+gadgets are required. It runs everywhere and it's Python extensible. No
+Internet connection is required. You don't have to trust anyone with
+your money. Welcome to the future of secure, P2P banking.
 
 ```
 :'::.:::::.:::.::.:
