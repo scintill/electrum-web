@@ -27,9 +27,9 @@ INDEX
 
 Electrum was created in 2011, in the aftermath of a notorious
 online Bitcoin wallet heist (MyBitcoin), one of the largest ever
-recorded. Dr. Thomas Voegtlin, then a computer scientist at INRIA, set
-out to help Bitcoin users avoid future thefts by making centralized
-servers in Bitcoin obsolete.
+recorded. Dr. Thomas Voegtlin, then a computer scientist at INRIA, set out
+to help Bitcoin users avoid future thefts by making centralized servers
+and trust hierarchies unnecessary for convenient, daily usage of Bitcoin.
 
 To do this, Thomas enlisted the help of numerous instrumental core Bitcoin
 developers, who would help build a special kind of Bitcoin wallet. This
