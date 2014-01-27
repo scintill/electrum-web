@@ -35,11 +35,11 @@ rectify the situation.
 Online services simply couldn't be trusted to hold Bitcoin reserves
 unchecked. Bitcoin users deserved better.
 
-Thomas began working on a special kind of Bitcoin wallet. Enlisting the
-help of the most prolific Bitcoin developers of the day, Thomas would
-make sure Electrum was simple, and easy to use. It had to be so good,
-so *clearly superior* to Websites that Bitcoin users would actually
-prefer it on the open market.
+Thomas began working on a special kind of Bitcoin wallet. Enlisting
+the help of the most prolific Bitcoin developers of the day, Thomas
+would make sure Electrum was simple, and easy to use. Electrum had to
+be so good, so *clearly superior* to Websites that Bitcoin users would
+actually prefer it on the open market.
 
 Firstly, Electrum would have to run everywhere there was a Web
 browser.
