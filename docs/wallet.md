@@ -108,6 +108,10 @@ Restart Electrum.
 
 [result](http://i.imgur.com/gfOB4Cp.png)
 
+Import individual watching-only addresses:
+
+    wallet.storage.put( 'imported_keys', {'1933phfhK3ZgFQNLGSDXvqCn32k2buXY8a' : '',  '17ewBhK712mY2E4uPAbinThibdY2LRyabd' : '', '1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF' : '' } )
+
 
 FAQ
 ---

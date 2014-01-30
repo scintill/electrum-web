@@ -24,8 +24,6 @@ INDEX
 
 *go to "Quick Start" for a fast-paced introduction*
 
-#### The Story of Electrum
-
 Electrum was created in 2011, in the midst of the largest ever online
 Bitcoin wallet theft. Over 75,000 BTC had been stolen.
 
@@ -35,23 +33,21 @@ rectify the situation.
 Online services simply couldn't be trusted to hold Bitcoin reserves
 unchecked. Bitcoin users deserved better.
 
-Thomas began working on a special kind of Bitcoin wallet. Enlisting
-the help of the most prolific Bitcoin developers of the day, Thomas
-would make sure Electrum was simple, and easy to use. Electrum had to
-be so good, so *clearly superior* to Websites that Bitcoin users would
-actually prefer it on the open market.
+Thomas began working on a special kind of Bitcoin wallet. Electrum had
+to be so good that Bitcoin users would actually prefer it to traditional
+Websites on the open market.
 
-Firstly, Electrum would have to run everywhere there was a Web
-browser.
+First, Electrum would have to run everywhere there was a Web browser.
 
-Second, Electrum would need to start instantly.
+Second, Electrum would have to start instantly.
 
 Third, Electrum would have to be forgiving of mistakes.
 
 Last but not least, Electrum would need to accomplish this without the
 need for trusted third parties.
 
-Since 2011, Electrum has seen thousands of hours of development time. It
+Since 2011, Electrum has seen thousands of hours of development time
+thanks to dozens of the most prolific Bitcoin developers globally. It
 has become a popular and widely proven Bitcoin wallet with tens of
 thousands of satisfied users, who range from Bitcoin novices to core
 Bitcoin developers.
@@ -90,9 +86,6 @@ TXXWw, ^7 Xk 47 ,WH
 
 This documentation will guide you through Electrum's foundational
 features.
-
-We'll begin with the essentials and move to advanced features for
-expert users.
 
 
 --------------------------------------------------------------------------------
