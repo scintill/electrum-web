@@ -41,4 +41,4 @@ rm gh-pages.zip
 
 launch site:
 
-`darkhttpd $PWD --port 54321`
+`cd hexo-gh-pages && darkhttpd $PWD --port 54321`
