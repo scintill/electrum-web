@@ -277,13 +277,13 @@ COMMANDS
 
 ## EXAMPLES
 
-`Connect to a private electrum-server instance`
+`Connect to a specific electrum-server instance`
 
-    $ electrum -s electrum.yourdomain.tld:50002:s -1
+    $ electrum -s electrum.be:50002:s -1
 
-`Connect to a private electrum-server instance (Tor hidden service)`
+`Connect to a specific electrum-server instance (Tor hidden service)`
 
-    $ electrum -p socks5:127.0.0.1:9050 -s electrum.3g2upl4pq6kufc4m.onion:50001:t -1
+    $ electrum -p socks5:127.0.0.1:9050 -s 56ckl5obj37gypcu.onion:50001:t -1
 
 `Create, sign and send a raw transaction`
 
@@ -370,4 +370,4 @@ the Free Software Foundation.
 SEE ALSO
 --------
 
-electrum-server(1), bitcoind(1), quixand(1)
+electrum-server(1), bitcoind(1)

@@ -266,14 +266,14 @@ surround the string in quotes.</p>
 
 <h2 id="EXAMPLES">EXAMPLES</h2>
 
-<p><code>Connect to a private electrum-server instance</code></p>
+<p><code>Connect to a specific electrum-server instance</code></p>
 
-<pre><code>$ electrum -s electrum.yourdomain.tld:50002:s -1
+<pre><code>$ electrum -s electrum.be:50002:s -1
 </code></pre>
 
-<p><code>Connect to a private electrum-server instance (Tor hidden service)</code></p>
+<p><code>Connect to a specific electrum-server instance (Tor hidden service)</code></p>
 
-<pre><code>$ electrum -p socks5:127.0.0.1:9050 -s electrum.3g2upl4pq6kufc4m.onion:50001:t -1
+<pre><code>$ electrum -p socks5:127.0.0.1:9050 -s 56ckl5obj37gypcu.onion:50001:t -1
 </code></pre>
 
 <p><code>Create, sign and send a raw transaction</code></p>
@@ -363,12 +363,12 @@ the Free Software Foundation.</p>
 
 <h2 id="SEE-ALSO">SEE ALSO</h2>
 
-<p><span class="man-ref">electrum-server<span class="s">(1)</span></span>, <span class="man-ref">bitcoind<span class="s">(1)</span></span>, <span class="man-ref">quixand<span class="s">(1)</span></span></p>
+<p><span class="man-ref">electrum-server<span class="s">(1)</span></span>, <span class="man-ref">bitcoind<span class="s">(1)</span></span></p>
 
 
   <ol class='man-decor man-foot man foot'>
     <li class='tl'>Electrum 1.9.7</li>
-    <li class='tc'>January 2014</li>
+    <li class='tc'>February 2014</li>
     <li class='tr'>electrum(1)</li>
   </ol>
 
