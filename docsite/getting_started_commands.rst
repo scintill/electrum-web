@@ -6,7 +6,7 @@ Commands
 .. _create:
 
 Create
-``````
+------
 ::
 
   electrum create

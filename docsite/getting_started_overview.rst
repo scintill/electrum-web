@@ -6,7 +6,7 @@ Overview
 .. _what_is_electrum:
 
 What is Electrum?
-`````````````````
+-----------------
 
 Electrum is an easy to use Bitcoin client. It protects you from losing
 coins in a backup mistake or computer failure, because your wallet can
@@ -19,7 +19,7 @@ on a Web browser or central server. All integral components are open
 source and the source code can be verified and inspected before usage.
 
 Electrum is simple.
--------------------
+^^^^^^^^^^^^^^^^^^^
 
     "A designer knows he has achieved perfection not when there is
     nothing left to add, but when there is nothing left to take away."
@@ -43,7 +43,7 @@ Even its visual interface is optional. You can do it all on the command
 line.
 
 Electrum is modular.
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
     "The whole is more than the sum of its parts."
     — Aristotle
@@ -64,7 +64,7 @@ In addition, the Electrum codebase itself is extensible. Custom
 functionality may be implemented via Python plugins.
 
 Electrum is powerful.
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Electrum is a deterministic mnemonic Bitcoin wallet designed with
 modularity, simplicity and security in mind. It gives you the full power
@@ -80,80 +80,80 @@ deliver a secure, private and extensible solution.
 .. _installation:
 
 Installation
-````````````
+------------
 
 .. _on_windows:
 
 Installing on Windows
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Windows installation instructions go here.
 
 .. _on_mac:
 
 Installing on Mac OS/X
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 Mac OS/X installation instructions go here.
 
 .. _on_android:
 
 Installing on Android
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Android installation instructions go here.
 
 .. _on_debian:
 
 Installing on Debian/Ubuntu
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Debian/Ubuntu installation instructions go here.
 
 .. _on_fedora:
 
 Installing on Fedora
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 Fedora, CentOS, RHEL installation instructions go here.
 
 .. _on_opensuse:
 
 Installing on OpenSUSE
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 OpenSUSE installation instructions go here.
 
 .. _on_arch_linux:
 
 Installing on Arch Linux
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Electrum is available in the AUR.
 
 .. _on_gentoo:
 
 Installing on Gentoo
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 Gentoo installation instructions go here.
 
 .. _on_freebsd:
 
 Installing on FreeBSD
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 FreeBSD installation instructions go here.
 
 .. _from_source:
 
 Installing From Source
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. _requirements:
 
 Requirements
-~~~~~~~~~~~~
+""""""""""""
 
 Runtime and build dependencies are required.
 
@@ -181,7 +181,7 @@ Optional dependencies:
 .. _downloading:
 
 Downloading
-~~~~~~~~~~~
+"""""""""""
 
 Download Electrum and (optionally) verify the sources:::
 
@@ -193,7 +193,7 @@ Download Electrum and (optionally) verify the sources:::
 .. _building:
 
 Building
-~~~~~~~~
+""""""""
 
 Extract Electrum-1.9.7.tar.gz::
 
@@ -219,6 +219,9 @@ To build::
 You're finished. Electrum is now ready to run:::
 
   ./electrum --help
+
+Installing
+""""""""""
 
 If you wish to install Electrum globally:::
 
