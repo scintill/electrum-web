@@ -2,6 +2,7 @@ Setup
 =====
 
 .. contents:: Contents
+   :numbered:
 
 .. _first_steps:
 

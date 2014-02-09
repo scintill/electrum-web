@@ -3,6 +3,7 @@ Overview
 
 .. contents:: Contents
    :depth: 2
+   :numbered:
 
 .. _what_is_electrum:
 
