@@ -6,11 +6,11 @@ Usage instructions.
 .. toctree::
    :maxdepth: 1
 
-   basic_usage_creating
-   basic_usage_restoring
-   basic_usage_sending
-   basic_usage_receiving
-   basic_usage_password
-   basic_usage_accounts
-   basic_usage_uninstalling
-   basic_usage_updating
+   Creating a Wallet <basic_usage_creating>
+   Restore a Wallet <basic_usage_restoring>
+   Sending Coins <basic_usage_sending>
+   Receiving Coins <basic_usage_receiving>
+   Setting a Password <basic_usage_password>
+   Account Management <basic_usage_accounts>
+   Uninstalling <basic_usage_uninstalling>
+   Updating <basic_usage_updating>

@@ -2,6 +2,7 @@ Overview
 ========
 
 .. contents:: Contents
+   :depth: 2
 
 .. _what_is_electrum:
 
@@ -18,8 +19,7 @@ Electrum can operate without a network connection, and it doesn't depend
 on a Web browser or central server. All integral components are open
 source and the source code can be verified and inspected before usage.
 
-Electrum is simple.
-^^^^^^^^^^^^^^^^^^^
+**Electrum is simple.**
 
     "A designer knows he has achieved perfection not when there is
     nothing left to add, but when there is nothing left to take away."
@@ -42,8 +42,7 @@ you don't have to trust anyone.
 Even its visual interface is optional. You can do it all on the command
 line.
 
-Electrum is modular.
-^^^^^^^^^^^^^^^^^^^^
+**Electrum is modular.**
 
     "The whole is more than the sum of its parts."
     — Aristotle
@@ -63,8 +62,7 @@ Bitcoin node.
 In addition, the Electrum codebase itself is extensible. Custom
 functionality may be implemented via Python plugins.
 
-Electrum is powerful.
-^^^^^^^^^^^^^^^^^^^^^
+**Electrum is powerful.**
 
 Electrum is a deterministic mnemonic Bitcoin wallet designed with
 modularity, simplicity and security in mind. It gives you the full power
@@ -195,7 +193,7 @@ Download Electrum and (optionally) verify the sources:::
 Building
 """"""""
 
-Extract Electrum-1.9.7.tar.gz::
+Extract Electrum-1.9.7.tar.gz:::
 
   echo 'Extracting source tarball...'
   tar xvzf Electrum-1.9.7.tar.gz

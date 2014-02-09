@@ -6,7 +6,7 @@ Advanced attributes.
 .. toctree::
    :maxdepth: 1
 
-   advanced_cli
-   advanced_python_console
-   advanced_plugins
-   advanced_merchants
+   Command Line Interface <advanced_cli>
+   Python Console <advanced_python_console>
+   Plugins <advanced_plugins>
+   Merchants <advanced_merchants>

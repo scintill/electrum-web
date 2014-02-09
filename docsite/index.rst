@@ -11,11 +11,11 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   getting_started
-   basic_usage
-   advanced
-   guides
-   miscellaneous
+   Getting Started <getting_started>
+   Basic Usage <basic_usage>
+   Advanced <advanced>
+   Guides <guides>
+   Miscellaneous <miscellaneous>
 
 
 Indices and tables
@@ -24,4 +24,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

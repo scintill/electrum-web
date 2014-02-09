@@ -11,8 +11,7 @@ We'll also see what sort of modules are available in Ansible's core
 .. toctree::
    :maxdepth: 1
 
-   getting_started_overview
-   getting_started_setup
-   getting_started_commands
-   getting_started_architecture
-
+   Overview <getting_started_overview>
+   Setup <getting_started_setup>
+   Commands <getting_started_commands>
+   Architecture <getting_started_architecture>

@@ -6,7 +6,7 @@ Miscellaneous.
 .. toctree::
    :maxdepth: 1
 
-   miscellaneous_additional_resources
-   miscellaneous_contributing
-   miscellaneous_glossary
-   miscellaneous_troubleshooting
+   Additional Resources <miscellaneous_additional_resources>
+   Contributing <miscellaneous_contributing>
+   Glossary <miscellaneous_glossary>
+   Troubleshooting <miscellaneous_troubleshooting>
