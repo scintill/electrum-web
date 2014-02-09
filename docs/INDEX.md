@@ -11,11 +11,11 @@ INDEX
   * [Usage](https://docs.electrum.org/usage)
   * [Guides](https://docs.electrum.org/guides)
   * [Plugins](https://docs.electrum.org/plugins)
+  * [Troubleshooting](https://docs.electrum.org/troubleshooting)
   * [Contributing](https://docs.electrum.org/contributing)
   * [Glossary](https://docs.electrum.org/glossary)
   * [Support](https://electrum.org/support)
   * [FAQ](https://electrum.org/support/faq)
-  * [Troubleshooting](https://electrum.org/support/troubleshooting)
 
 
 --------------------------------------------------------------------------------
