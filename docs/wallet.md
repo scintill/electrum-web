@@ -90,6 +90,14 @@ Usage
 - Multisig / Escrow
 - Various Handy Scripts
 
+### terminal
+
+F6=network, F11=settings, F9=quit
+
+### stdio
+
+docs
+
 ### Python Console
 
 Generate new receiving addresses:
