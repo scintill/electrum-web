@@ -44,6 +44,14 @@ documentation highly themable and much more scriptable.
 The cost of Hexo is bringing in a bit of the Node.js ecosystem,
 and foregoing Sphinx.
 
+apidocs
+-------
+
+Sphinx (autodoc).
+
+Autodoc is *the* way to document highly technical parts of Python code.
+AFAIK, an `autodoc`-style Markdown parser for Python code doesn't exist.
+
 Man Pages
 ---------
 
