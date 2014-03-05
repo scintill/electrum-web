@@ -6,14 +6,14 @@ Before You Begin
 ----------------
 
 This document will show you how to install Electrum on Windows, Mac,
-Android, GNU/Linux and FreeBSD platforms.
+Android, GNU/Linux and BSD platforms.
 
 Installation
 ------------
 
 #### Requirements
 
-None. Zero extraneous software or hardware is required to use Electrum.
+None.
 
 #### Windows
 
@@ -54,6 +54,8 @@ sudo pip install https://download.electrum.org/Electrum-1.9.7.tar.gz#md5=5764f38
 
 **Arch**
 
+Install from AUR: https://aur.archlinux.org/packages/electrum
+
 ```bash
 # with packer
 packer -S electrum
@@ -67,6 +69,7 @@ yaourt -S electrum
 ```bash
 # manually
 for pkg in python2-ecdsa python2-slowaes electrum; do
+  rm -rf $pkg ${pkg}.tar.gz && mkdir -p $pkg
   curl -k -O https://aur.archlinux.org/packages/${pkg:0:2}/$pkg/$pkg.tar.gz
   tar -xvzf ${pkg}.tar.gz --strip 1 -C $pkg
   cd $pkg
@@ -81,6 +84,8 @@ done
 emerge electrum
 ```
 
-#### FreeBSD
+#### BSD
+
+**FreeBSD**
 
 http://ftp.freebsd.org/pub/FreeBSD/ports/packages/Latest/electrum.tbz
