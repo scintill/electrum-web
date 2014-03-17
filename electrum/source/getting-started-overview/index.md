@@ -81,8 +81,7 @@ yaourt -S electrum
 
 ```bash
 # manually
-pacman -S python2-pbkdf2
-for pkg in python2-ecdsa python2-slowaes electrum; do
+for pkg in python2-ecdsa python2-pbkdf2 python2-slowaes electrum; do
   rm -rf $pkg ${pkg}.tar.gz && mkdir -p $pkg
   curl -k -O https://aur.archlinux.org/packages/${pkg:0:2}/$pkg/$pkg.tar.gz
   tar -xvzf ${pkg}.tar.gz --strip 1 -C $pkg
