@@ -11,6 +11,8 @@ Android, GNU/Linux and BSD platforms.
 Installation
 ------------
 
+*Documented version: 1.9.8*
+
 #### Requirements
 
 None.
@@ -25,9 +27,18 @@ None.
 
 **Ubuntu 13.10**
 
+With apt-get:
+
 ```bash
 sudo apt-get install python-pip python-qt4 python-slowaes
-sudo pip install https://download.electrum.org/Electrum-1.9.7.tar.gz#md5=5764f38d6e4bc287a577c8d16e797882
+sudo pip install pbkdf2
+sudo pip install https://download.electrum.org/Electrum-1.9.8.tar.gz#md5=0d9896eddc7532813b29af0bf9010e7b
+```
+
+From GitHub source:
+
+```bash
+git clone https://github.com/spesmilo/electrum
 ```
 
 **Fedora 20**
@@ -38,7 +49,8 @@ curl -k -O https://pypi.python.org/packages/source/s/slowaes/slowaes-0.1a1.tar.g
 tar xvzf slowaes-0.1a1.tar.gz
 cd slowaes-0.1a1
 sudo python setup.py install --optimize=1
-sudo pip install https://download.electrum.org/Electrum-1.9.7.tar.gz#md5=5764f38d6e4bc287a577c8d16e797882
+sudo pip install pbkdf2
+sudo pip install https://download.electrum.org/Electrum-1.9.8.tar.gz#md5=0d9896eddc7532813b29af0bf9010e7b
 ```
 
 **openSUSE 13.1**
@@ -49,7 +61,8 @@ curl -k -O https://pypi.python.org/packages/source/s/slowaes/slowaes-0.1a1.tar.g
 tar xvzf slowaes-0.1a1.tar.gz
 cd slowaes-0.1a1
 sudo python setup.py install --optimize=1
-sudo pip install https://download.electrum.org/Electrum-1.9.7.tar.gz#md5=5764f38d6e4bc287a577c8d16e797882
+sudo pip install pbkdf2
+sudo pip install https://download.electrum.org/Electrum-1.9.8.tar.gz#md5=0d9896eddc7532813b29af0bf9010e7b
 ```
 
 **Arch**
@@ -68,6 +81,7 @@ yaourt -S electrum
 
 ```bash
 # manually
+pacman -S python2-pbkdf2
 for pkg in python2-ecdsa python2-slowaes electrum; do
   rm -rf $pkg ${pkg}.tar.gz && mkdir -p $pkg
   curl -k -O https://aur.archlinux.org/packages/${pkg:0:2}/$pkg/$pkg.tar.gz
