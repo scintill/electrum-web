@@ -13,3 +13,4 @@ next: contributing
 * [Electrum Dice: Roll Your Own Seed](http://www.reddit.com/r/Bitcoin/comments/1r48ur/electrum_dice_pdf_roll_your_own_seed/)
 * [How to Install Ubuntu (Linux) to a USB drive (or other hard disk) and the Electrum Wallet](http://www.watchonlywallet.com/ubuntu.php)
 * [How-to: Building an offline cold wallet with a Raspberry Pi, Pidora and Electrum](http://www.reddit.com/r/Bitcoin/comments/1rrxe5/howto_building_an_offline_cold_wallet_with_a/)
+* [Fragmented Backups in Electrum (Guide)](https://bitcointalk.org/index.php?topic=526381.0)
