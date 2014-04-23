@@ -67,34 +67,8 @@ sudo pip install https://download.electrum.org/Electrum-1.9.8.tar.gz#md5=0d9896e
 
 **Arch**
 
-Install from AUR: https://aur.archlinux.org/packages/electrum
-
 ```bash
-# with pacaur
-pacaur -Sy electrum
-```
-
-```bash
-# with packer
-packer -S electrum
-```
-
-```bash
-# with yaourt
-yaourt -S electrum
-```
-
-```bash
-# manually
-pacman -Sy --needed python2-ecdsa --noconfirm
-for pkg in python2-pbkdf2 python2-slowaes electrum; do
-  rm -rf $pkg ${pkg}.tar.gz && mkdir -p $pkg
-  curl -k -O https://aur.archlinux.org/packages/${pkg:0:2}/$pkg/$pkg.tar.gz
-  tar -xvzf ${pkg}.tar.gz --strip 1 -C $pkg
-  cd $pkg
-  makepkg -Acsi --noconfirm
-  cd ..
-done
+pacman -S electrum
 ```
 
 **Gentoo**
